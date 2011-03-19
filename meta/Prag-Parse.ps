@@ -1,0 +1,3097 @@
+%!PS-Adobe-3.0
+%%Title: (Prag-Parse.word)
+%%Creator: (Microsoft Word: LaserWriter 8 8.2)
+%%CreationDate: (7:17 PM Tuesday, December 6, 1994)
+%%For: (Henry Baker)
+%%Pages: 14
+%%DocumentFonts: Times-Italic Times-Roman Symbol Helvetica Helvetica-Bold Courier Courier-Oblique
+%%DocumentNeededFonts: Times-Italic Times-Roman Symbol Helvetica Helvetica-Bold Courier Courier-Oblique
+%%DocumentSuppliedFonts:
+%%DocumentData: Clean7Bit
+%%PageOrder: Ascend
+%%Orientation: Portrait
+%%DocumentMedia: Default 612 792 0 () ()
+%ADO_ImageableArea: 31 31 583 761
+%%EndComments
+userdict begin/dscInfo 5 dict dup begin
+/Title(Prag-Parse.word)def
+/Creator(Microsoft Word: LaserWriter 8 8.2)def
+/CreationDate(7:17 PM Tuesday, December 6, 1994)def
+/For(Henry Baker)def
+/Pages 1 def
+end def end
+
+save 
+/version23-manualfeedpatch where { pop false } { true }ifelse
+ % we don't do an explicit 'get' since product and version MAY
+ % be in systemdict or statusdict - this technique gets the lookup
+ % without failure
+statusdict begin
+  product (LaserWriter) eq        % true if LaserWriter
+  version cvr 23.0 eq             % true if version 23
+end
+
+and  % only install this patch if both are true
+and  % true only if patch is not installed and is for this printer
+     % save object and boolean on stack
+dup { exch restore }if
+% either true OR saveobject false
+dup
+{
+  /version23-manualfeedpatch true def
+  /oldversion23-showpage /showpage load def
+  /showpage       % this showpage will wait extra time if manualfeed is true
+  {%
+     statusdict /manualfeed known
+     {% manualfeed known in statusdict
+        statusdict /manualfeed get
+        {% if true then we loop for 5 seconds
+           usertime 5000 add       % target usertime
+           { % loop
+             dup usertime sub 0 lt
+             { exit }if
+           }loop
+           pop             % pop the usertime off the stac
+        }if
+     }if
+     oldversion23-showpage
+  }bind def
+}if
+not{ restore }if
+
+/md 153 dict def md begin/currentpacking where {pop /sc_oldpacking currentpacking def true setpacking}if
+%%BeginFile: adobe_psp_basic
+%%Copyright: Copyright 1990-1993 Adobe Systems Incorporated. All Rights Reserved.
+/bd{bind def}bind def
+/xdf{exch def}bd
+/xs{exch store}bd
+/ld{load def}bd
+/Z{0 def}bd
+/T/true
+/F/false
+/:L/lineto
+/lw/setlinewidth
+/:M/moveto
+/rl/rlineto
+/rm/rmoveto
+/:C/curveto
+/:T/translate
+/:K/closepath
+/:mf/makefont
+/gS/gsave
+/gR/grestore
+/np/newpath
+14{ld}repeat
+/$m matrix def
+/av 81 def
+/por true def
+/normland false def
+/psb-nosave{}bd
+/pse-nosave{}bd
+/us Z
+/psb{/us save store}bd
+/pse{us restore}bd
+/level2
+/languagelevel where
+{
+pop languagelevel 2 ge
+}{
+false
+}ifelse
+def
+/featurecleanup
+{
+stopped
+cleartomark
+countdictstack exch sub dup 0 gt
+{
+{end}repeat
+}{
+pop
+}ifelse
+}bd
+/noload Z
+/startnoload
+{
+{/noload save store}if
+}bd
+/endnoload
+{
+{noload restore}if
+}bd
+level2 startnoload
+/setjob
+{
+statusdict/jobname 3 -1 roll put
+}bd
+/setcopies
+{
+userdict/#copies 3 -1 roll put
+}bd
+level2 endnoload level2 not startnoload
+/setjob
+{
+1 dict begin/JobName xdf currentdict end setuserparams
+}bd
+/setcopies
+{
+1 dict begin/NumCopies xdf currentdict end setpagedevice
+}bd
+level2 not endnoload
+/pm Z
+/mT Z
+/sD Z
+/realshowpage Z
+/initializepage
+{
+/pm save store mT concat
+}bd
+/endp
+{
+pm restore showpage
+}def
+/$c/DeviceRGB def
+/rectclip where
+{
+pop/rC/rectclip ld
+}{
+/rC
+{
+np 4 2 roll
+:M
+1 index 0 rl
+0 exch rl
+neg 0 rl
+:K
+clip np
+}bd
+}ifelse
+/rectfill where
+{
+pop/rF/rectfill ld
+}{
+/rF
+{
+gS
+np
+4 2 roll
+:M
+1 index 0 rl
+0 exch rl
+neg 0 rl
+fill
+gR
+}bd
+}ifelse
+/rectstroke where
+{
+pop/rS/rectstroke ld
+}{
+/rS
+{
+gS
+np
+4 2 roll
+:M
+1 index 0 rl
+0 exch rl
+neg 0 rl
+:K
+stroke
+gR
+}bd
+}ifelse
+%%EndFile
+%%BeginFile: adobe_psp_colorspace_level1
+%%Copyright: Copyright 1991-1993 Adobe Systems Incorporated. All Rights Reserved.
+/G/setgray ld
+/:F/setrgbcolor ld
+%%EndFile
+%%BeginFile: adobe_psp_uniform_graphics
+%%Copyright: Copyright 1990-1993 Adobe Systems Incorporated. All Rights Reserved.
+/@a
+{
+np :M 0 rl :L 0 exch rl 0 rl :L fill
+}bd
+/@b
+{
+np :M 0 rl 0 exch rl :L 0 rl 0 exch rl fill
+}bd
+/arct where
+{
+pop
+}{
+/arct
+{
+arcto pop pop pop pop
+}bd
+}ifelse
+/x1 Z
+/x2 Z
+/y1 Z
+/y2 Z
+/rad Z
+/@q
+{
+/rad xs
+/y2 xs
+/x2 xs
+/y1 xs
+/x1 xs
+np
+x2 x1 add 2 div y1 :M
+x2 y1 x2 y2 rad arct
+x2 y2 x1 y2 rad arct
+x1 y2 x1 y1 rad arct
+x1 y1 x2 y1 rad arct
+fill
+}bd
+/@s
+{
+/rad xs
+/y2 xs
+/x2 xs
+/y1 xs
+/x1 xs
+np
+x2 x1 add 2 div y1 :M
+x2 y1 x2 y2 rad arct
+x2 y2 x1 y2 rad arct
+x1 y2 x1 y1 rad arct
+x1 y1 x2 y1 rad arct
+:K
+stroke
+}bd
+/@i
+{
+np 0 360 arc fill
+}bd
+/@j
+{
+gS
+np
+:T
+scale
+0 0 .5 0 360 arc
+fill
+gR
+}bd
+/@e
+{
+np
+0 360 arc
+:K
+stroke
+}bd
+/@f
+{
+np
+$m currentmatrix
+pop
+:T
+scale
+0 0 .5 0 360 arc
+:K
+$m setmatrix
+stroke
+}bd
+/@k
+{
+gS
+np
+:T
+0 0 :M
+0 0 5 2 roll
+arc fill
+gR
+}bd
+/@l
+{
+gS
+np
+:T
+0 0 :M
+scale
+0 0 .5 5 -2 roll arc
+fill
+gR
+}bd
+/@m
+{
+np
+arc
+stroke
+}bd
+/@n
+{
+np
+$m currentmatrix
+pop
+:T
+scale
+0 0 .5 5 -2 roll arc
+$m setmatrix
+stroke
+}bd
+%%EndFile
+%%BeginFile: adobe_psp_basic_text
+%%Copyright: Copyright 1990-1993 Adobe Systems Incorporated. All Rights Reserved.
+/S/show ld
+/A{
+0.0 exch ashow
+}bd
+/R{
+0.0 exch 32 exch widthshow
+}bd
+/W{
+0.0 3 1 roll widthshow
+}bd
+/J{
+0.0 32 4 2 roll 0.0 exch awidthshow
+}bd
+/V{
+0.0 4 1 roll 0.0 exch awidthshow
+}bd
+/fcflg true def
+/fc{
+fcflg{
+vmstatus exch sub 50000 lt{
+(%%[ Warning: Running out of memory ]%%\r)print flush/fcflg false store
+}if pop
+}if
+}bd
+/$f[1 0 0 -1 0 0]def
+/:ff{$f :mf}bd
+/MacEncoding StandardEncoding 256 array copy def
+MacEncoding 39/quotesingle put
+MacEncoding 96/grave put
+/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/notequal/AE/Oslash
+/infinity/plusminus/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega/ae/oslash
+/questiondown/exclamdown/logicalnot/radical/florin/approxequal/Delta/guillemotleft
+/guillemotright/ellipsis/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/lozenge
+/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright/fi/fl
+/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/apple/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+MacEncoding 128 128 getinterval astore pop
+level2 startnoload
+/copyfontdict
+{
+findfont dup length dict
+begin
+{
+1 index/FID ne{def}{pop pop}ifelse
+}forall
+}bd
+level2 endnoload level2 not startnoload
+/copyfontdict
+{
+findfont dup length dict
+copy
+begin
+}bd
+level2 not endnoload
+md/fontname known not{
+/fontname/customfont def
+}if
+/Encoding Z
+/:mre
+{
+copyfontdict
+/Encoding MacEncoding def
+fontname currentdict
+end
+definefont :ff def
+}bd
+/:bsr
+{
+copyfontdict
+/Encoding Encoding 256 array copy def
+Encoding dup
+}bd
+/pd{put dup}bd
+/:esr
+{
+pop pop
+fontname currentdict
+end
+definefont :ff def
+}bd
+/scf
+{
+scalefont def
+}bd
+/scf-non
+{
+$m scale :mf setfont
+}bd
+/ps Z
+/fz{/ps xs}bd
+/sf/setfont ld
+/cF/currentfont ld
+/mbf
+{
+/makeblendedfont where
+{
+pop
+makeblendedfont
+/ABlend exch definefont
+}{
+pop
+}ifelse
+def
+}def
+%%EndFile
+/currentpacking where {pop sc_oldpacking setpacking}if end
+%%EndProlog
+%%BeginSetup
+md begin
+countdictstack[{
+%%BeginFeature: *ManualFeed False
+statusdict /manualfeed false put
+%%EndFeature
+}featurecleanup
+countdictstack[{
+%%BeginFeature: *InputSlot Cassette
+
+%%EndFeature
+}featurecleanup
+countdictstack[{
+%%BeginFeature: *PageRegion LetterSmall
+lettersmall
+%%EndFeature
+}featurecleanup
+(Henry Baker)setjob
+/mT[1 0 0 -1 31 761]def
+/sD 16 dict def
+300 level2{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse
+%%IncludeFont: Times-Italic
+%%IncludeFont: Times-Roman
+%%IncludeFont: Symbol
+%%IncludeFont: Helvetica
+%%IncludeFont: Helvetica-Bold
+%%IncludeFont: Courier
+%%IncludeFont: Courier-Oblique
+/f0_1/Times-Italic
+:mre
+/f0_12 f0_1 12 scf
+/f0_10 f0_1 10 scf
+/f1_1/Times-Roman
+:mre
+/f1_12 f1_1 12 scf
+/f1_10 f1_1 10 scf
+/f1_9 f1_1 9 scf
+/f2_1/Symbol
+:bsr
+240/apple pd
+:esr
+/f2_12 f2_1 12 scf
+/f2_9 f2_1 9 scf
+/f3_1/Helvetica
+:mre
+/f3_18 f3_1 18 scf
+/f3_14 f3_1 14 scf
+/f3_12 f3_1 12 scf
+/f4_1/Helvetica-Bold
+:mre
+/f4_12 f4_1 12 scf
+/f5_1/Courier
+:mre
+/f5_12 f5_1 12 scf
+/f5_10 f5_1 10 scf
+/f6_1/Courier-Oblique
+:mre
+/f6_10 f6_1 10 scf
+/Courier findfont[10 0 0 -10 0 0]:mf setfont
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 1 of 14)setjob
+%%EndPageSetup
+gS 0 0 552 730 rC
+41 14 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+41 721 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+467 721 :M
+(1)S
+41 43 :M
+f3_18 sf
+-.13(Pragmatic Parsing in Common Lisp)A
+41 68 :M
+f3_14 sf
+-.112(Henry G. Baker)A
+41 96 :M
+f3_12 sf
+1.015 .101(Nimble Computer Corporation)J
+41 109 :M
+.582 .058(16231 Meadow Ridge Way)J
+41 122 :M
+.427 .043(Encino, CA  91436)J
+41 135 :M
+.665(USA)A
+41 148 :M
+1.943 .194(\(818\) 501-4956\312\312\(818\) 986-1360 \(FAX\))J
+41 170 :M
+f1_12 sf
+.312 .031(January, 1991)J
+41 186 :M
+f1_9 sf
+.881 .088(This work was supported in part by the U.S. Department of Energy Contract\312No.\312DE-AC03-88ER80663)J
+39 195 -1 1 511 194 1 39 194 @a
+41 209 :M
+f1_12 sf
+.236 .024(We review META, a classic technique for building recursive descent parsers, that is both simple)J
+41 221 :M
+.961 .096(and efficient.  While META does not handle all possible regular or context-free grammars, it)J
+41 233 :M
+.923 .092(handles a surprisingly large fraction of the grammars encountered by Lisp programmers.  We)J
+41 245 :M
+-.019(show how META can be used to parse streams, strings and lists\321including Common Lisp's hairy)A
+41 257 :M
+-.047(lambda expression parameter lists.  Finally, we compare the execution time of this parsing method)A
+41 269 :M
+-.078(to the built-in methods of Common Lisp.)A
+39 279 -1 1 511 278 1 39 278 @a
+41 299 :M
+f3_12 sf
+.401(A.\312\312INTRODUCTION)A
+41 321 :M
+f1_12 sf
+-.097(Lisp has traditionally been a language that eschews complex syntax.  According to John McCarthy,)A
+41 333 :M
+-.115(the inventor of Lisp:)A
+61 350 :M
+f1_10 sf
+.838 .084(This internal representation of symbolic information gives up the familiar infix notations in favor of a)J
+61 361 :M
+.446 .045(notation that simplifies the task of programming the )J
+f0_10 sf
+.115(substantive)A
+f1_10 sf
+.503 .05( computations, e.g., logical deduction or)J
+61 372 :M
+.603 .06(algebraic simplification, differentiation or integration.  If customary notations are to be used externally,)J
+61 383 :M
+2.255 .225(translation programs must be written.  Thus LISP programs use a prefix notation for algebraic)J
+61 394 :M
+.035 .004(expressions, because they usually must determine the main connective before deciding what to do next.  In)J
+61 405 :M
+1.313 .131(this, LISP differs from almost every other symbolic computation system.  ...  This feature probably)J
+61 416 :M
+.32 .032(accounts for LISP's success in competition with these languages, especially when large programs have to)J
+61 427 :M
+-.024(be written.  )A
+f0_10 sf
+-.027(The advantage is like that of binary computers over decimal\321but larger)A
+f1_10 sf
+(.)S
+61 443 :M
+.275 .028(... Another reason for the initial acceptance of awkwardnesses in the internal form of LISP is that we still)J
+61 454 :M
+1.808 .181(expected to switch to writing programs as M-expressions [infix format].  )J
+f0_10 sf
+1.983 .198(The project of defining)J
+61 465 :M
+.579 .058(M-expressions precisely and compiling them or at least translating them into S-expressions was neither)J
+61 476 :M
+1.026 .103(finalized nor explicitly abandoned.  It just receded into the indefinite future)J
+f1_10 sf
+.88 .088(, and a new generation of)J
+61 487 :M
+-.041(programmers appeared who preferred internal notation to any FORTRAN-like or ALGOL-like notation that)A
+61 498 :M
+-.169(could be devised.)A
+61 514 :M
+.438 .044(... One can even conjecture that LISP owes its survival specifically to the fact that its programs are lists,)J
+61 525 :M
+1.203 .12(which everyone, including me, has regarded as a disadvantage.  )J
+f0_10 sf
+1.473 .147(Proposed replacements for LISP ...)J
+61 536 :M
+1.284 .128(abandoned this feature in favor of an Algol-like syntax, leaving no target language for higher level)J
+61 547 :M
+(systems)S
+f1_10 sf
+-.002(. [McCarthy78], with emphasis added.)A
+41 563 :M
+f1_12 sf
+1.797 .18(Accordingly, Lisp users and developers have usually had the luxury of dealing with more)J
+41 575 :M
+.699 .07("substantive" computations, so that they are often at a loss when they face a )J
+f0_12 sf
+.218(parsing)A
+f1_12 sf
+.49 .049( task.  No)J
+41 587 :M
+.079 .008(matter how hard they try to write clean, efficient code, the Lisp language doesn't seem to provide)J
+41 599 :M
+-.116(them with the right linguistic constructs to make an elegant program.)A
+41 616 :M
+.205 .02(The programs required to implement a Common Lisp system itself provide some good examples)J
+41 628 :M
+.251 .025(where parsing techniques are required.  Parsing the rather hairy parameter lists of Common Lisp)J
+41 640 :M
+.689 .069(lambda-expressions [Steele90,5.2.2] has caused many good programmers to tear their hair out,)J
+41 653 :M
+-.011(and ditto for the syntax of many built-in Common Lisp macros \(e.g., )A
+f5_10 sf
+-.013(defclass)A
+f1_12 sf
+-.01( and )A
+f5_10 sf
+-.013(defmethod)A
+f1_12 sf
+(\).)S
+f1_9 sf
+0 -3 rm
+(1)S
+0 3 rm
+-4127 -4126 -1 1 -4125 -4126 1 -4127 -4127 @a
+41 662.24 -.24 .24 184.24 662 .24 41 662 @a
+41 674 :M
+.077(1)A
+f1_10 sf
+0 3 rm
+.229 .023(See, e.g., the definition of )J
+0 -3 rm
+f0_10 sf
+0 3 rm
+.07(Closette)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.248 .025( [des\312Rivi\217res90].  The inability of )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.103(defmacro)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.213 .021( to easily parse the syntax of the)J
+0 -3 rm
+41 688 :M
+.742 .074(more complex Common Lisp macros exhibits a significant weakness in Common Lisp.  The technique reviewed)J
+41 699 :M
+-.032(here can handle complex macros such as )A
+f5_10 sf
+-.046(defmethod)A
+f1_10 sf
+(.)S
+endp
+%%Page: 2 2
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 2 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(2)S
+72 69 :M
+.95 .095(The parsing of numbers and "potential numbers" in the Lisp reader [Steele90,22.1.2] requires)J
+72 81 :M
+-.043(extensive syntax-hacking.  )A
+f5_10 sf
+-.053(format)A
+f1_12 sf
+-.041( control strings [Steele90,22.3.3] require parsing at run-time \(or)A
+72 93 :M
+.806 .081(perhaps at compile time [Steele90,27.5], if )J
+f5_10 sf
+.242(format)A
+f1_12 sf
+.743 .074( uses a compiler optimizer\).  Finally, many)J
+72 105 :M
+1.447 .145(networking protocols require extensive \(and often excessive\) syntax analysis; slow protocol)J
+72 117 :M
+-.086(parsing is typically the chief cause of poor network performance.)A
+72 135 :M
+.546 .055(Prolog programmers, however, find parsing tasks trivial,)J
+f1_9 sf
+0 -3 rm
+.105(2)A
+0 3 rm
+f1_12 sf
+.445 .045( and the ease of programming parsing)J
+72 147 :M
+-.06(tasks has been one of the selling points of Prolog to unsophisticated programmers.)A
+72 164 :M
+-.028(Lisp has a few tricks up its sleeve, however.  Lisp is a language-building language )A
+f0_12 sf
+-.03(par excellence)A
+f1_12 sf
+(,)S
+72 176 :M
+2.71 .271(and it can therefore easily emulate those Prolog capabilities that make parsing simple.)J
+72 188 :M
+-.086(Furthermore, since our emulation will include only those features we need, we will be able to parse)A
+72 200 :M
+.187 .019(much more quickly than a Prolog system.  Finally, the technique does not require the splitting of)J
+72 212 :M
+-.091(the parsing task into separate lexical and syntactic analyses, futher simplifying the parsers.)A
+72 235 :M
+f3_12 sf
+2.387 .239(B.\312\312REGULAR EXPRESSIONS)J
+72 257 :M
+f1_12 sf
+-.066(Every computer scientist knows about )A
+f0_12 sf
+-.065(regular expressions)A
+f1_12 sf
+-.062(, which describe )A
+f0_12 sf
+-.068(regular languages)A
+f1_12 sf
+-.076(, and)A
+72 269 :M
+-.118(the ability of deterministic and non-deterministic )A
+f0_12 sf
+-.119(finite state machines)A
+f1_12 sf
+-.125( to recognize these languages.)A
+72 281 :M
+.192 .019(Regular expressions over an )J
+f0_12 sf
+.049(alphabet)A
+f1_12 sf
+.177 .018( consist of the letters of that alphabet \("symbols"\), together)J
+72 293 :M
+-.022(with a number of operations: concatenation, union and Kleene star.  )A
+f0_12 sf
+-.025(Concatenation)A
+f1_12 sf
+-.025( describes how)A
+72 305 :M
+1.611 .161(the letters can follow one another to make strings, and )J
+f0_12 sf
+.523(union)A
+f1_12 sf
+1.678 .168( allows one to have different)J
+72 317 :M
+1.722 .172(alternative expressions that are equivalent.  Finally, Kleene )J
+f0_12 sf
+.397(star)A
+f1_12 sf
+1.424 .142( allows for "zero or more")J
+72 329 :M
+-.056(concatenated occurrences of a particular expression to be another expression.  Regular expressions)A
+72 341 :M
+.257 .026(can be a very compact and moderately readable description of a regular language, and they have)J
+72 353 :M
+-.078(become a standard as a result.)A
+72 370 :M
+.093 .009(Finite state machines consist of an )J
+f0_12 sf
+.028(alphabet)A
+f1_12 sf
+.066 .007(, a number of )J
+f0_12 sf
+.024(states)A
+f1_12 sf
+.083 .008(, one of which is designated as an)J
+72 382 :M
+.763 .076("initial" or "starting" state, and some of which are "final" or "accepting" states, and a )J
+f0_12 sf
+.242(relation)A
+72 394 :M
+f1_12 sf
+-.013(which maps a combination of a state and an alphabet letter into a "next" state.  If the relation is an)A
+72 406 :M
+(algebraic )S
+f0_12 sf
+(function)S
+f1_12 sf
+-.002(, then the finite state machine is )A
+f0_12 sf
+(deterministic)S
+f1_12 sf
+(, otherwise it is )S
+f0_12 sf
+(non-deterministic)S
+f1_12 sf
+(.)S
+72 418 :M
+-.008(Given any finite state machine, it can be algorithmically converted into a deterministic finite state)A
+72 430 :M
+.298 .03(machine by simulating sets of states starting from the singleton set consisting of the initial state,)J
+72 442 :M
+.102 .01(and tracing out all state combinations, which are necessarily finite.  There may be an exponential)J
+72 454 :M
+-.015(blowup in the number of states, however.)A
+72 471 :M
+.011 .001(Deterministic finite state machines make excellent parsers because they can be implemented very)J
+72 483 :M
+.038 .004(efficiently on serial computers using table-lookup, and their speed is therefore independent of the)J
+72 495 :M
+-.012(complexity of the next-state function.  Unfortunately, the number of states\321and hence the size of)A
+72 507 :M
+-.044(the next-state table\321is usually quite large for relatively simple languages, and even if it is not, the)A
+72 519 :M
+-.046(programming of these tables is extremely tedious and error-prone.  Thus, the computation of finite)A
+72 531 :M
+-.127(state machines is an excellent job for a compiler.)A
+72 548 :M
+.849 .085(The mapping of regular expressions onto non-deterministic finite state machines is trivial; the)J
+72 561 :M
+2.621 .262(harder part is the conversion to deterministic form, which can blow up exponentially.)J
+f1_9 sf
+0 -3 rm
+(3)S
+0 3 rm
+72 573 :M
+f1_12 sf
+.894 .089(Deterministic conversion has a number of drawbacks, however.  The deterministic finite state)J
+72 585 :M
+-.001(machine may bear little resemblence to the original regular expression, and more importantly, the)A
+72 597 :M
+-.102(conversion to deterministic form will not generalize to context free languages, which we will tackle)A
+72 609 :M
+-.086(in the next section.)A
+72 626 :M
+.131 .013(We would therefore like to investigate a scheme which keeps the original structure of the regular)J
+72 638 :M
+-.051(expression, and also has most of the efficiency of a deterministic finite state machine.  This cannot)A
+72 650 :M
+-.068(be done in general, but it can be done for most regular expressions that are encountered in practise.)A
+72 662 :M
+.334 .033(It might be asked why one would consider a less powerful and potentially less efficient method,)J
+72 674 :M
+-.061(when computer science has already given us a universal and efficient method\321deterministic finite)A
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 693.24 -.24 .24 215.24 693 .24 72 693 @a
+72 705 :M
+f1_9 sf
+(2)S
+f1_10 sf
+0 3 rm
+.151 .015(Perhaps too trivial, as some Prolog programmers turn simple grammers into parsers with exponential behavior.)J
+0 -3 rm
+72 722 :M
+f1_9 sf
+(3)S
+f1_10 sf
+0 3 rm
+-.026(The sheer size of these state tables may kill the advantage of instruction and/or data caches.)A
+0 -3 rm
+endp
+%%Page: 3 3
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 3 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(3)S
+72 69 :M
+-.079(state machines.  The reason is that we are usually interested in non-regular languages\321particularly)A
+72 81 :M
+-.114(context free languages\321where this particular sledgehammer fails.)A
+72 105 :M
+f4_12 sf
+4.016 .402(1.\312\312META Parsing of Common Lisp Streams)J
+72 122 :M
+f1_12 sf
+.045 .004(The scheme we will describe has been used for at least 27 years, but is relatively unknown today,)J
+72 134 :M
+.092 .009(because computer science departments are rightly more interested in teaching theoretically pretty)J
+72 146 :M
+.727 .073(models like regular and context-free languages, rather than practical methods that may also be)J
+72 159 :M
+1.821 .182(elegant and efficient.)J
+f1_9 sf
+0 -3 rm
+.341(4)A
+0 3 rm
+f1_12 sf
+1.274 .127(  The scheme involves building a tiny language on top of Lisp which)J
+72 171 :M
+-.001(compiles to extremely efficient code.  The tiny language, called META [Schorre64], incorporates)A
+72 183 :M
+-.062(the basic operations of regular expressions, and the code is therefore quite perspicuous.)A
+72 200 :M
+-.111(Let us see the META code for recognizing signed integers.)A
+72 218 :M
+f5_10 sf
+.03 .003(\(deftype digit \(\) '\(member #\\0 #\\1 #\\2 #\\3 #\\4 #\\5 #\\6 #\\7 #\\8 #\\9\)\))J
+f1_9 sf
+0 -3 rm
+(5)S
+0 3 rm
+72 240 :M
+f5_10 sf
+(\(defun parse-integer \(&aux d\))S
+72 251 :M
+.005 .001(  \(matchit [{#\\+ #\\- []} @\(digit d\) $@\(digit d\)]\)\))J
+72 267 :M
+f1_12 sf
+.006 .001(We first define a new Common Lisp type which is a subset of the characters that includes just the)J
+72 279 :M
+.116 .012(digits.  We then define our parser for integers as a function with a temporary variable and a body)J
+72 292 :M
+-.013(which is a call to the macro )A
+f5_12 sf
+-.02(matchit)A
+f1_12 sf
+(.  )S
+f5_12 sf
+-.02(matchit)A
+f1_12 sf
+-.015( has an argument which is a META expression)A
+72 304 :M
+.312 .031(which it compiles into Common Lisp when it is expanded.  The META expression includes two)J
+72 316 :M
+.182 .018(new kinds of "parentheses": brackets "[]" and braces "{}", as well as operators like "$" and "@".)J
+72 328 :M
+.305 .03(The brackets "[]" enclose )J
+f0_12 sf
+.087(sequences)A
+f1_12 sf
+.264 .026(, while the braces "{}" enclose )J
+f0_12 sf
+.076(alternatives)A
+f1_12 sf
+.229 .023(; the use of these)J
+72 341 :M
+-.093(additional "parentheses" eliminates the need for prefix or infix operations.)A
+f1_9 sf
+0 -3 rm
+(6)S
+0 3 rm
+72 358 :M
+f1_12 sf
+.271 .027(The META operators "[]", "{}", and "$" provide the sequence, union and Kleene star operations)J
+72 370 :M
+.278 .028(of regular expressions, so most regular expressions can be converted into META expressions by)J
+72 382 :M
+.003 0(inspection.  Letters stand for themselves in normal Common Lisp syntax, e.g., )J
+f5_10 sf
+(#\\+)S
+f1_12 sf
+(, and @ allows)S
+72 394 :M
+2.201 .22(the matching of a number of character possibilities with a single operation.  The use of)J
+72 406 :M
+f5_10 sf
+-.1(@\(digit\312d\))A
+f1_12 sf
+-.064( in )A
+f5_10 sf
+-.1(parse-integer)A
+f1_12 sf
+-.083( could logically have been replaced by the expression)A
+157 423 :M
+f5_10 sf
+.001({#\\0\312#\\1\312#\\2\312#\\3\312#\\4\312#\\5\312#\\6\312#\\7\312#\\8\312#\\9},)A
+72 440 :M
+f1_12 sf
+(but it would not have been as clear or efficient.)S
+f1_9 sf
+0 -3 rm
+(7)S
+0 3 rm
+f1_12 sf
+(  The META expression for )S
+f5_10 sf
+(parse-integer)S
+f1_12 sf
+( says)S
+72 452 :M
+.471 .047(that integers should be preceded by a )J
+f0_12 sf
+.14(sign)A
+f1_12 sf
+.408 .041( of plus or minus or nothing, followed by a )J
+f0_12 sf
+.124(digit)A
+f1_12 sf
+.468 .047(, and)J
+72 464 :M
+1.124 .112(then followed by any number \(including none\) of additional )J
+f0_12 sf
+.256(digits)A
+f1_12 sf
+.836 .084(.  We note that the regular)J
+72 476 :M
+.179 .018(expression alternative of having a possibly empty digit sequence )J
+f0_12 sf
+.034(first)A
+f1_12 sf
+.15 .015(, followed by a single digit,)J
+72 488 :M
+-.069(will not work in META, however.  The reason for this will become clear.)A
+72 505 :M
+2.017 .202(If all META did was recognize regular expressions, it would not be very useful.  It is a)J
+72 517 :M
+-.011(programming language, however, and the operations [], {} and $ correspond to the Common Lisp)A
+72 530 :M
+(control structures )S
+f5_12 sf
+(AND)S
+f1_12 sf
+(, )S
+f5_12 sf
+(OR)S
+f1_12 sf
+(, and )S
+f5_12 sf
+(DO)S
+f1_12 sf
+(.)S
+f1_9 sf
+0 -3 rm
+(8)S
+0 3 rm
+f1_12 sf
+(  Therefore, we can utilize META to not only )S
+f0_12 sf
+(parse)S
+f1_12 sf
+(, but also)S
+72 542 :M
+-.061(to )A
+f0_12 sf
+-.078(transform)A
+f1_12 sf
+-.072(.  In this way, META is analogous to "attributed grammars" [Aho86], but it is an order)A
+72 554 :M
+.432 .043(of magnitude simpler and more efficient.  Thus, with the addition of the "escape" operation "!",)J
+72 566 :M
+1.04 .104(which allows us to incorporate arbitrary Lisp expressions into META, we can not only parse)J
+72 579 :M
+-.072(integers, but produce their integral value as a result.)A
+f1_9 sf
+0 -3 rm
+(9)S
+0 3 rm
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 593.24 -.24 .24 215.24 593 .24 72 593 @a
+72 605 :M
+(4)S
+f1_10 sf
+0 3 rm
+.091 .009(Unfortunately, it is not clear where the )J
+0 -3 rm
+f0_10 sf
+0 3 rm
+.025(art)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.103 .01( of programming will be taught.)J
+0 -3 rm
+72 622 :M
+f1_9 sf
+.614(5)A
+f1_10 sf
+0 3 rm
+2.295 .229(A potentially more efficient and general, but perhaps less perspicuous definition would define digit as)J
+0 -3 rm
+72 636 :M
+f5_10 sf
+.013(\(deftype\312digit\312\(\)\312'\(satisfies\312digit-char-p\)\))A
+f1_10 sf
+(.)S
+72 650 :M
+f1_9 sf
+(6)S
+f1_10 sf
+0 3 rm
+-.027(Modern text editors \(e.g., EMACS\) can be customized to match braces and brackets as easily as parentheses.)A
+0 -3 rm
+72 667 :M
+f1_9 sf
+(7)S
+f1_10 sf
+0 3 rm
+.167 .017(We show later how to deal with inefficient Common Lisp )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.066(typep)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.045('s.)A
+0 -3 rm
+72 684 :M
+f1_9 sf
+.215(8)A
+f1_10 sf
+0 3 rm
+.867 .087(More precisely, )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.287($)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.577 .058(x is analogous to )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.287<284E4F54CA28444FCA2829CA28284E4F54CA>A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.239(x)A
+0 -3 rm
+f5_10 sf
+0 3 rm
+.287<292929>A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.739 .074(.  META control structures thus bear more)J
+0 -3 rm
+72 698 :M
+.093 .009(than a passing resemblance to the TECO text editor control structures \(TECO still comes with DEC VMS software\).)J
+72 712 :M
+f1_9 sf
+(9)S
+f1_10 sf
+0 3 rm
+.189 .019(If Kernighan and Ritchie had been aware of META parsing techniques, the C language [Kernighan78] would have)J
+0 -3 rm
+72 726 :M
+(had )S
+f5_10 sf
+.017(for)A
+f1_10 sf
+.031 .003( \(loop\) )J
+f0_10 sf
+.012(expressions)A
+f1_10 sf
+.033 .003(, rather than )J
+f0_10 sf
+.012(statements)A
+f1_10 sf
+.025 .002(, and )J
+f5_10 sf
+.017(lex/yacc)A
+f1_10 sf
+.051 .005( [Johnson78] might now be mere curiosities.)J
+endp
+%%Page: 4 4
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 4 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(4)S
+72 69 :M
+-.061(Below is a parser for signed integers which returns the integer.)A
+72 86 :M
+f5_10 sf
+.006 .001(\(defun ctoi \(d\) \(- \(char-code d\) #.\(char-code #\\0\)\)\))J
+72 108 :M
+.005 .001(\(defun parse-int \(&aux \(s +1\) d \(n 0\)\))J
+72 119 :M
+( \(and)S
+72 130 :M
+(  \(matchit)S
+72 141 :M
+(   [{#\\+ [#\\- !\(setq s -1\)] []})S
+72 152 :M
+(    @\(digit d\) !\(setq n \(ctoi d\)\))S
+72 163 :M
+.004 0(    $[@\(digit d\) !\(setq n \(+ \(* n 10\) \(ctoi d\)\)\)]]\))J
+72 174 :M
+(  \(* s n\)\)\))S
+72 190 :M
+f1_12 sf
+-.091(Below is the code into which it compiles.)A
+72 207 :M
+f5_10 sf
+.005 .001(\(defun parse-int \(&aux \(s +1\) d \(n 0\)\))J
+72 218 :M
+( \(and)S
+72 229 :M
+(  \(and \(or \(match #\\+\))S
+72 240 :M
+.003 0(           \(and \(match #\\-\) \(setq s -1\)\))J
+72 251 :M
+(           \(and\)\))S
+72 262 :M
+.004 0(       \(match-type digit d\) \(setq n \(ctoi d\)\))J
+72 273 :M
+.004 0(       \(not \(do \(\) \(\(not \(and \(match-type digit d\))J
+72 284 :M
+.002 0(                              \(setq n \(+ \(* n 10\) \(ctoi d\)\)\)\)\)\)\)\)\))J
+72 295 :M
+(  \(* s n\)\)\))S
+72 311 :M
+f1_12 sf
+.482 .048(Before we can delve further into )J
+f5_10 sf
+.17(match)A
+f1_12 sf
+.264 .026( and )J
+f5_10 sf
+.17(match-type)A
+f1_12 sf
+.408 .041(, we must make clear what it is we are)J
+72 323 :M
+.151 .015(trying to parse\321whether it be a Common Lisp character stream, a character string, or a Lisp list.)J
+72 335 :M
+-.049(If the source of the text we are trying to parse is an internal source, like a character string or a Lisp)A
+72 347 :M
+.761 .076(list, then we are in a position to be able to back up.  If the source is a standard Common Lisp)J
+72 359 :M
+-.077(character stream, however, then we can only look \("peek"\) one character ahead.)A
+72 376 :M
+-.084(First, consider a standard Common Lisp character stream source:)A
+72 394 :M
+f5_10 sf
+.075 .008(\(defmacro match \(x\) `\(when \(eql)J
+f1_9 sf
+0 -3 rm
+(10)S
+0 3 rm
+f5_10 sf
+.089 .009( \(peek-char\) ',x\) \(read-char\)\)\))J
+72 416 :M
+(\(defmacro match-type \(x v\))S
+72 427 :M
+.006 .001(  `\(when \(typep \(peek-char\) ',x\) \(setq ,v \(read-char\)\)\)\))J
+72 443 :M
+f1_12 sf
+-.059(These macros allow us to match a given character or character type against the input stream, and if)A
+72 455 :M
+-.074(the match succeeds, the stream is advanced, while if the match fails, then the stream is left where it)A
+72 467 :M
+.179 .018(was.  Unfortunately, once a match succeeds against such a source, we are now committed to that)J
+72 479 :M
+.095 .009(path, because we can no longer back up.  This means that the original regular expression must be)J
+72 491 :M
+-.101("deterministic", in the sense that any sequence is determined by its first element.)A
+72 508 :M
+.974 .097(While this determinism requirement would seem to substantially limit our technique, one can)J
+72 520 :M
+.083 .008(usually get around the restriction by "factoring out" of an alternative the leftmost character of the)J
+72 532 :M
+.872 .087(alternate sequences.  For example, the expression )J
+f5_10 sf
+.261({[#\\:\312#\\@]\312[#\\:]})A
+f1_12 sf
+.643 .064( can be factored to get)J
+72 544 :M
+f5_10 sf
+-.015([#\\:\312{#\\@\312[]}])A
+f1_12 sf
+-.012(.  \(Of course, one should also put off performing any transformation side-effects)A
+72 556 :M
+.979 .098(until one has arrived at the correct alternative branch.\)  Using this technique, we can scan an)J
+72 568 :M
+.544 .054(optional sign, digits, and an optional decimal point from the front of a number, even before we)J
+72 580 :M
+-.019(know whether the number will be an integer, a ratio, or a floating-point number [Steele90,22.1.2].)A
+72 593 :M
+-.022(A ratio will be signalled by a ")A
+f5_12 sf
+(/)S
+f1_12 sf
+-.022(", a floating-point number will be signalled by additional digits or)A
+72 606 :M
+-.048(an exponent, and an integer will have none of these.)A
+f1_9 sf
+0 -3 rm
+-.089(11)A
+0 3 rm
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 671.24 -.24 .24 215.24 671 .24 72 671 @a
+72 683 :M
+.441(10)A
+f1_10 sf
+0 3 rm
+1.068 .107(The use of )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.588(eql)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+1.008 .101( keeps )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.588(match)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.762 .076( and )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.588(match-type)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+1.418 .142( consistent; )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.588(eql)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+1.516 .152( is required, in general, for comparing)J
+0 -3 rm
+72 697 :M
+-.041(characters.  See [Baker93] for a lengthy discussion on object equality.)A
+72 711 :M
+f1_9 sf
+.235(11)A
+f1_10 sf
+0 3 rm
+.749 .075(The case of Lisp's isolated dot "." is most easily and efficiently handled by initially parsing it as the "integer")J
+0 -3 rm
+72 725 :M
+-.383(zero!)A
+endp
+%%Page: 5 5
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 5 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(5)S
+72 69 :M
+-.024(Below is a parser/transformer for Common Lisp real numbers [Steele90,22.1.2].)A
+72 86 :M
+f5_10 sf
+.006 .001(\(deftype sign \(\) '\(member #\\+ #\\-\)\))J
+72 108 :M
+.005 .001(\(deftype expmarker \(\) '\(member #\\e #\\s #\\f #\\d #\\l #\\E #\\S #\\F #\\D #\\L\)\))J
+72 130 :M
+.071 .007(\(defun parse-number)J
+f1_10 sf
+( )S
+f5_10 sf
+.03 .003(\(&aux x \(is #\\+\) id \(i 0\) dd \(d 0\))J
+72 141 :M
+.002 0(                         fd \(f 0\) \(nf 0\) \(es #\\+\) ed \(e 0\) \(m #\\e\)\))J
+72 152 :M
+.006 .001(  ;;; Parse CL real number according to [Steele90,22.1.2])J
+72 163 :M
+.005 .001(  ;;; Return 2 values: the number and a reversed list of lookahead characters.)J
+72 174 :M
+(  \(matchit)S
+72 185 :M
+.004 0(   [{[@\(sign is\) !\(push is x\)] []} ; scan sign.)J
+72 196 :M
+.004 0(    $[@\(digit id\) !\(setq x nil i \(+ \(* i 10\) \(ctoi id\)\)\)])J
+437 196 :M
+(; integer digits.)S
+72 207 :M
+(    {[!id #\\/ !\(push #\\/ x\))S
+437 207 :M
+(; "/" => ratio.)S
+72 218 :M
+.004 0(      $[@\(digit dd\) !\(setq x nil d \(+ \(* d 10\) \(ctoi dd\)\)\)]])J
+437 218 :M
+(; denom. digits.)S
+72 229 :M
+(     [{[#\\. {!id !\(push #\\. x\)})S
+437 229 :M
+(; decimal point.)S
+72 240 :M
+(        $[@\(digit fd\))S
+72 251 :M
+.003 0(          !\(setq x nil nf \(1+ nf\) f \(+ \(* f 10\) \(ctoi fd\)\)\)]] ; fract. digits.)J
+72 262 :M
+(       []})S
+72 273 :M
+.004 0(      {[{!id !fd} @\(expmarker m\) !\(push m x\))J
+437 273 :M
+(; exp. marker.)S
+72 284 :M
+.003 0(        {[@\(sign es\) !\(push es x\)] []})J
+437 284 :M
+(; exponent sign.)S
+72 295 :M
+.004 0(        $[@\(digit ed\) !\(setq x nil e \(+ \(* e 10\) \(ctoi ed\)\)\)]] ; exp. digits.)J
+72 306 :M
+(       []}]}]\))S
+72 317 :M
+.004 0(  \(let \(\(sign \(if \(eql is #\\-\) -1 1\)\))J
+72 328 :M
+.003 0(        \(ex \(if \(eql es #\\-\) \(- e\) e\)\)\))J
+72 339 :M
+.004 0(    \(values \(cond \(\(or fd ed\) \(make-float m sign i f nf ex\)\))J
+437 339 :M
+(; see [Clinger90])S
+72 350 :M
+.002 0(                  \(dd \(/ \(* sign i\) d\)\))J
+72 361 :M
+(                  \(id \(* sign i\)\))S
+72 372 :M
+(                  \(t nil\)\))S
+72 383 :M
+(            x\)\)\))S
+72 399 :M
+f1_12 sf
+.649 .065(We first note that this half-page function is only slightly longer than the grammar for numbers)J
+72 411 :M
+1.231 .123(given in [Steele90,22.1.2], and is only slightly less readable.  Second, we note that we have)J
+72 423 :M
+1.097 .11(utilized both null tests on local variables in addition to the standard )J
+f5_10 sf
+.388(match)A
+f1_12 sf
+1.137 .114( predicates in this)J
+72 435 :M
+.547 .055(program.  For example, the test )J
+f5_10 sf
+.197({!id\312!fd})A
+f1_12 sf
+.568 .057(, which checks for the existence of either integer or)J
+72 447 :M
+.422 .042(fraction digits, must succeed before the exponent marker can be scanned.  Third, preserving the)J
+72 459 :M
+1.231 .123(characters that were looked at but not used requires additional work, because Common Lisp)J
+72 471 :M
+-.013(streams support only 1 character lookahead, yet many Common Lisp parsing tasks require up to 3)A
+72 483 :M
+-.096(lookahead characters.)A
+72 500 :M
+-.16(Below is the actual META compiler.)A
+72 517 :M
+f5_10 sf
+(\(defun compileit \(x\))S
+72 528 :M
+(  \(typecase x)S
+72 539 :M
+(    \(meta)S
+72 550 :M
+(     \(ecase \(meta-char x\))S
+72 561 :M
+(       \(#\\! \(meta-form x\)\))S
+72 572 :M
+.005 0(       \(#\\[ `\(and ,@\(mapcar #'compileit \(meta-form x\)\)\)\))J
+72 583 :M
+.005 0(       \(#\\{ `\(or ,@\(mapcar #'compileit \(meta-form x\)\)\)\))J
+72 594 :M
+.005 0(       \(#\\$ `\(not \(do \(\)\(\(not ,\(compileit \(meta-form x\)\)\)\)\)\)\))J
+72 605 :M
+.02 .002(       \(#\\@ \(let \(\(f \(meta-form x\)\)\))J
+f1_10 sf
+( )S
+f5_10 sf
+.04 .004(`\(match-type ,\(car f\) ,\(cadr f\)\)\)\)\)\))J
+72 616 :M
+(    \(t `\(match ,x\)\)\)\))S
+72 638 :M
+.007 .001(\(defmacro matchit \(x\) \(compileit x\)\))J
+endp
+%%Page: 6 6
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 6 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(6)S
+72 69 :M
+-.115(We will also need a few macro character definitions for the additional syntax.)A
+72 86 :M
+f5_10 sf
+(\(defstruct \(meta)S
+72 97 :M
+(            \(:print-function)S
+72 108 :M
+.004 0(             \(lambda \(m s d &aux \(char \(meta-char m\)\) \(form \(meta-form m\)\)\))J
+72 119 :M
+(               \(ecase char)S
+72 130 :M
+.003 0(                 \(\(#\\@ #\\! #\\$\) \(format s "~A~A" char form\)\))J
+72 141 :M
+.003 0(                 \(#\\[ \(format s "[~{~A~^ ~}]" form\)\))J
+72 152 :M
+.003 0(                 \(#\\{ \(format s "{~{~A~^ ~}}" form\)\)\)\)\)\))J
+72 163 :M
+(  char)S
+72 174 :M
+(  form\))S
+72 196 :M
+.006 .001(\(defun meta-reader \(s c\) \(make-meta :char c :form \(read s\)\)\))J
+72 218 :M
+.007 .001(\(mapc #'\(lambda \(c\) \(set-macro-character c #'meta-reader\)\) '\(#\\@ #\\$ #\\!\)\))J
+72 240 :M
+(\(set-macro-character #\\[)S
+72 251 :M
+.006 .001( #'\(lambda \(s c\) \(make-meta :char c :form \(read-delimited-list #\\] s t\)\)\)\))J
+72 273 :M
+(\(set-macro-character #\\{)S
+72 284 :M
+.006 .001( #'\(lambda \(s c\) \(make-meta :char c :form \(read-delimited-list #\\} s t\)\)\)\))J
+72 306 :M
+.007 .001(\(mapc #'\(lambda \(c\) \(set-macro-character c \(get-macro-character #\\\) nil\)\)\))J
+72 317 :M
+(      '\(#\\] #\\}\)\))S
+72 340 :M
+f4_12 sf
+3.904 .39(2.\312\312META Parsing of Common Lisp Strings)J
+72 357 :M
+f1_12 sf
+.558 .056(In many cases, we want to parse strings rather than streams.  While we could use the Common)J
+72 369 :M
+1.297 .13(Lisp function )J
+f5_10 sf
+.393(make-string-input-stream)A
+f1_12 sf
+1.09 .109( along with our previous code, we will find that)J
+72 381 :M
+.335 .033(matching and especially backing-up will be faster on strings.  Since we no longer have to worry)J
+72 393 :M
+.047 .005(about backing up, we will be able to search further forward without having to factor the grammar)J
+72 405 :M
+.358 .036(as described in the previous section.  We need not capture the actual characters as a substring is)J
+72 417 :M
+.074 .007(scanned, but need only save their beginning and ending locations, because we still have access to)J
+72 429 :M
+1.423 .142(the original string; this feature speeds the parsing of format control strings, in which major)J
+72 441 :M
+-.08(portions of the given string are just constant characters.)A
+72 458 :M
+.084 .008(Our )J
+f5_10 sf
+.033(matchit)A
+f1_12 sf
+.095 .009( macro will now generate code that implicitly refers to the lexical variables )J
+f5_10 sf
+.033(string)A
+f1_12 sf
+(,)S
+72 470 :M
+f5_10 sf
+.137(index)A
+f1_12 sf
+.359 .036( \(the starting index\), and )J
+f5_10 sf
+.137(end)A
+f1_12 sf
+.414 .041( \(the ending index\), which should be defined in the lexically)J
+72 482 :M
+-.029(surrounding environment.  By utilizing lexical instead of special \(dynamic\) variables, we can gain)A
+72 494 :M
+.923 .092(substantially in execution speed, and the same techniques will work in other languages\321e.g.,)J
+72 506 :M
+-.104(Scheme\321assuming that they have powerful enough macro facilities.)A
+72 523 :M
+f5_10 sf
+(\(defmacro match \(x\))S
+72 534 :M
+.005 .001(  `\(when \(and \(< index end\) \(eql \(char string index\) ',x\)\))J
+72 545 :M
+(     \(incf index\)\))S
+72 567 :M
+(\(defmacro match-type \(x v\))S
+72 578 :M
+.005 .001(  `\(when \(and \(< index end\) \(typep \(char string index\) ',x\)\))J
+72 589 :M
+.004 0(     \(setq ,v \(char string index\)\) \(incf index\)\))J
+72 611 :M
+.007 .001(\(defun parse-int \(string &optional \(index 0\) \(end \(length string\)\))J
+72 622 :M
+.002 0(                         &aux \(s +1\) d \(n 0\)\))J
+72 633 :M
+.006 .001( ;;; Lexical 'string', 'index', and 'end', as required by matchit.)J
+72 644 :M
+( \(and)S
+72 655 :M
+(  \(matchit)S
+72 666 :M
+(   [{#\\+ [#\\- !\(setq s -1\)] []})S
+72 677 :M
+(    @\(digit d\) !\(setq n \(ctoi d\)\))S
+72 688 :M
+.004 0(    $[@\(digit d\) !\(setq n \(+ \(* n 10\) \(ctoi d\)\)\)]]\))J
+72 699 :M
+(  \(* s n\)\)\))S
+72 715 :M
+f1_12 sf
+-.049(Due to our ability to back up when parsing strings, we can now enhance our META language with)A
+72 727 :M
+.636 .064(a construct to match a constant string\321e.g., )J
+f5_10 sf
+.205("abc")A
+f1_12 sf
+.706 .071(\321instead of having to match the individual)J
+endp
+%%Page: 7 7
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 7 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(7)S
+72 69 :M
+.934 .093(letters )J
+f5_10 sf
+.312([#\\a\312#\\b\312#\\c])A
+f1_12 sf
+.87 .087(.  We do this by saving the current string pointer before beginning the)J
+72 81 :M
+-.113(match, and backing up to the saved index if the match fails\321even after the first character.)A
+72 98 :M
+f5_10 sf
+(\(defmacro match \(x\))S
+72 109 :M
+(  \(etypecase x)S
+72 120 :M
+(   \(character)S
+72 131 :M
+.005 0(    `\(when \(and \(< index end\) \(eql \(char string index\) ',x\)\))J
+72 142 :M
+(       \(incf index\)\)\))S
+72 153 :M
+(   \(string)S
+72 164 :M
+.004 0(    `\(let \(\(old-index index\)\) ; 'old-index' is a )J
+f6_10 sf
+(lexical)S
+f5_10 sf
+( variable.)S
+72 175 :M
+.004 0(       \(or \(and ,@\(map 'list #'\(lambda \(c\) `\(match ,c\)\) x\)\))J
+72 186 :M
+.004 0(           \(progn \(setq index old-index\) nil\)\)\)\)\)\))J
+72 209 :M
+f4_12 sf
+3.914 .391(3.\312\312META Parsing of Lisp Lists)J
+72 226 :M
+f1_12 sf
+.214 .021(So far, we have only parsed character strings.  Common Lisp lambda parameter lists and macros)J
+72 238 :M
+.119 .012(require the ability to parse Lisp lists, however.  Below is a parser for lambda parameter lists with)J
+72 251 :M
+-.074(only required and optional parameters.  We give a parser for full lambda-lists as an appendix.)A
+f1_9 sf
+0 -3 rm
+-.14(12)A
+0 3 rm
+72 268 :M
+f5_10 sf
+.007 .001(\(deftype vname \(\) `\(and symbol \(not \(member ,@lambda-list-keywords\)\)\)\))J
+72 290 :M
+.006 .001(\(defun lambda-list \(ll &aux \(index `\(,ll\)\) var initform svar\))J
+72 301 :M
+( \(matchit)S
+72 312 :M
+(  \($@\(vname var\))S
+72 323 :M
+(   {[&OPTIONAL)S
+264 323 :M
+.005 .001(; we use upper case here only for readability.)J
+72 334 :M
+(     ${@\(vname var\))S
+72 345 :M
+(       \(@\(vname var\))S
+72 356 :M
+.004 0(        {[@\(t initform\) {@\(vname svar\) []}])J
+72 367 :M
+(         []}\)}])S
+72 378 :M
+(    []}\)\)\))S
+72 394 :M
+f1_12 sf
+.142 .014(Interestingly enough, we can utilize the same parsing techniques on lists that we used on streams)J
+72 406 :M
+.017 .002(and strings.  We need only rewrite )J
+f5_10 sf
+(match)S
+f1_12 sf
+( and )S
+f5_10 sf
+.006(match-type)A
+f1_12 sf
+.017 .002(.  We first show a version that matches)J
+72 418 :M
+(only atoms.)S
+72 435 :M
+f5_10 sf
+(\(defmacro match \(x\))S
+72 446 :M
+.005 .001(  `\(when \(and \(consp index\) \(eql \(car index\) ',x\)\))J
+72 457 :M
+(     \(pop index\) t\)\))S
+72 479 :M
+(\(defmacro match-type \(x v\))S
+72 490 :M
+.005 .001(  `\(when \(and \(consp index\) \(typep \(car index\) ',x\)\))J
+72 501 :M
+.004 0(     \(setq ,v \(car index\)\) \(pop index\) t\)\))J
+72 517 :M
+f1_12 sf
+-.086(We now extend )A
+f5_10 sf
+-.092(match)A
+f1_12 sf
+-.072( so that it can recursively match on sublists.)A
+72 534 :M
+f5_10 sf
+(\(defun compilelst \(l\))S
+72 545 :M
+(  \(if \(atom l\) `\(eql index ',l\))S
+72 556 :M
+.005 0(      `\(and ,\(compileit \(car l\)\) ,\(compilelst \(cdr l\)\)\)\)\))J
+72 578 :M
+(\(defmacro match \(x\))S
+289 578 :M
+(; sublist uses new )S
+f6_10 sf
+(lexical)S
+f5_10 sf
+( index)S
+72 589 :M
+( `\(when \(and \(consp index\))S
+72 600 :M
+.003 0(             ,\(if \(atom x\) `\(eql \(car index\) ',x\))J
+72 611 :M
+.003 0(                `\(let \(\(index \(car index\)\)\) ,\(compilelst x\)\)\)\))J
+72 622 :M
+(    \(pop index\) t\)\))S
+72 644 :M
+f3_12 sf
+1.476 .148(C.\312\312CONTEXT-FREE GRAMMARS)J
+72 666 :M
+f1_12 sf
+.297 .03(So far, we have only considered grammars which were expressed as a single regular expression.)J
+72 678 :M
+.333 .033(Since we have iteration, but not recursion, we cannot leave the domain of finite state languages.)J
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 710.24 -.24 .24 215.24 710 .24 72 710 @a
+72 722 :M
+f1_9 sf
+-.107(12)A
+f1_10 sf
+0 3 rm
+-.099(An efficient META-based lambda-list parser allows for a code-)A
+0 -3 rm
+f0_10 sf
+0 3 rm
+-.108(runner)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+-.099( \(as opposed to a code-walker\).)A
+0 -3 rm
+endp
+%%Page: 8 8
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 8 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(8)S
+72 69 :M
+.126 .013(By giving portions of our grammars names, however, and then utilizing those names recursively,)J
+72 82 :M
+-.087(we immediately gain the possibility of parsing \(some\) context-free languages.)A
+f1_9 sf
+0 -3 rm
+-.161(13)A
+0 3 rm
+72 99 :M
+f1_12 sf
+-.054(As might be expected, each named expression becomes a "production", which is implemented as a)A
+72 111 :M
+.081 .008(Lisp function.  These Lisp functions must return a truth value, because our )J
+f5_10 sf
+.028(AND)A
+f1_12 sf
+(/)S
+f5_10 sf
+.028(OR)A
+f1_12 sf
+.074 .007( nests use truth)J
+72 123 :M
+1.452 .145(values for navigation.  This means that a grammar which performs a transformation cannot)J
+72 135 :M
+.424 .042(communicate its results through a normal Lisp return, but must communicate by means of side-)J
+72 147 :M
+2.788 .279(effects.  In order for these side-effects to be communicated through lexical instead of)J
+72 159 :M
+1.346 .135(special/dynamic variables, we group the "production" functions into a )J
+f5_10 sf
+.382(LABELS)A
+f1_12 sf
+.972 .097( nest which is)J
+72 171 :M
+2.348 .235(lexically included within a larger function which provides the lexical variables used for)J
+72 183 :M
+.53 .053(communication.  We have already seen the use of lexical variables local to each production for)J
+72 195 :M
+1.395 .139(communication within that production; we use lexical variables outside the )J
+f5_10 sf
+.403(LABELS)A
+f1_12 sf
+.944 .094( nest for)J
+72 207 :M
+-.023(communication among the productions and for communication of the result outside of the )A
+f5_10 sf
+-.034(LABELS)A
+72 219 :M
+f1_12 sf
+.314 .031(nest.  As a mnemonic, we often use a nasty Common Lisp pun, and make the name of the result)J
+72 231 :M
+-.109(variable for a function be the same as the name of the function.)A
+72 248 :M
+.727 .073(The code below illustrates the use of a )J
+f5_10 sf
+.28(LABELS)A
+f1_12 sf
+.907 .091( nest of productions, although we have already)J
+72 260 :M
+.152 .015(shown how to parse numbers using a single grammar.  Note that each production saves the value)J
+72 272 :M
+.529 .053(of the )J
+f5_10 sf
+.279(index)A
+f1_12 sf
+.744 .074( location, so that if the production fails, the program can back up to where it was)J
+72 284 :M
+.385 .039(when the production started.  Note also that we utilize the capability of executing arbitrary Lisp)J
+72 296 :M
+.136 .014(code within the "!" escape expression to actually call the production as a function; this capability)J
+72 309 :M
+-.069(could be used to parameterize a production by passing arguments.)A
+f1_9 sf
+0 -3 rm
+-.126(14)A
+0 3 rm
+72 326 :M
+f5_10 sf
+.007 .001(\(defun parse-number \(&aux \(index 0\) integer ratio floating-point-number\))J
+72 337 :M
+( \(labels)S
+72 348 :M
+.006 .001(  \(\(integer \(&aux \(old-index index\) <locals for integer>\))J
+72 359 :M
+.004 0(     \(or \(matchit <grammar for integer>\))J
+72 370 :M
+.004 0(         \(progn \(setq index old-index\) nil\)\)\))J
+72 381 :M
+.005 .001(   \(ratio \(&aux \(old-index index\) <locals for ratio>\))J
+72 392 :M
+.004 0(     \(or \(matchit <grammar for ratio>\))J
+72 403 :M
+.004 0(         \(progn \(setq index old-index\) nil\)\)\))J
+72 414 :M
+.006 .001(   \(floating-point-number \(&aux \(old-index index\) <locals for f-p-n>\))J
+72 425 :M
+.005 .001(     \(or \(matchit <grammar for floating-point-number>\))J
+72 436 :M
+.004 0(         \(progn \(setq index old-index\) nil\)\)\)\))J
+72 447 :M
+.008 .001(  \(matchit {!\(integer\) !\(ratio\) !\(floating-point-number\)}\))J
+72 458 :M
+.007 .001(  \(return \(or integer ratio floating-point-number\)\)\)\))J
+72 474 :M
+f1_12 sf
+-.103(Our compiler for Common Lisp format strings utilizes this technique.)A
+72 497 :M
+f3_12 sf
+.472 .047(D.\312\312EFFICIENCY, OPTIMIZATION AND A CHALLENGE TO SCHEME)J
+72 519 :M
+f1_12 sf
+.596 .06(We have claimed that META can be efficient, so we must show how META's compilation can)J
+72 531 :M
+1.004 .1(produce nearly optimal machine code.  The basic tools we will use are declarations, caching,)J
+72 543 :M
+-.091(inlining and short-circuiting.)A
+72 567 :M
+f4_12 sf
+1.355(1.\312\312Declarations)A
+72 584 :M
+f1_12 sf
+-.009(Through the use of declarations, we aid the compiler and make sure that it knows which variables)A
+72 596 :M
+-.008(are characters, which are fixnums and which are more general variables, so that the most efficient)A
+72 608 :M
+-.001(code is generated.  Of particular importance are the fixnum declarations for string index variables)A
+72 620 :M
+-.083(which are incremented/decremented and the cons declarations for variables which must be popped;)A
+72 632 :M
+-.088(in both these cases only one or two machine instructions need be generated.)A
+72 649 :M
+.954 .095(If parsing a string, we should find the underlying "simple" string and parse that instead, after)J
+72 661 :M
+.459 .046(suitably translating the starting and ending indices.  This is because it is cheaper to perform the)J
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 670.24 -.24 .24 215.24 670 .24 72 670 @a
+72 682 :M
+f1_9 sf
+.066(13)A
+f1_10 sf
+0 3 rm
+.165 .016(An )J
+0 -3 rm
+f0_10 sf
+0 3 rm
+.059(arbitrary)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.237 .024( context-free language can be parsed by techniques such as the LINGOL parser [Pratt73], which can)J
+0 -3 rm
+72 697 :M
+.101 .01(parse in time O\(n)J
+f1_9 sf
+0 -3 rm
+(3)S
+0 3 rm
+f1_10 sf
+.105 .01(\); we have also converted this parser to Common Lisp.)J
+72 711 :M
+f1_9 sf
+.093(14)A
+f1_10 sf
+0 3 rm
+.395 .04(Woods' )J
+0 -3 rm
+f0_10 sf
+0 3 rm
+.544 .054(Augmented Transition Networks)J
+0 -3 rm
+f1_10 sf
+0 3 rm
+.338 .034( \(ATN's\) [Woods70] were a rediscovery of the META technique for CF)J
+0 -3 rm
+72 725 :M
+-.06(grammars.)A
+endp
+%%Page: 9 9
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 9 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+498 752 :M
+(9)S
+72 69 :M
+.896 .09(translation once, rather than performing it on every access to the string.  On a byte-addressed)J
+72 81 :M
+-.017(machine, access to a "simple" string consists of an index check plus an indexed load; since we are)A
+72 93 :M
+.199 .02(already checking the index in the parser, we can dispense with the redundant index check during)J
+72 105 :M
+-.037(the string access.)A
+72 122 :M
+.11 .011(If parsing a list, then the parser will already be checking for the end of the list, so that unchecked)J
+72 134 :M
+f5_10 sf
+-.081(CAR)A
+f1_12 sf
+-.063( and )A
+f5_10 sf
+-.081(CDR)A
+f1_12 sf
+-.064( instructions may be safely used in this instance.)A
+72 158 :M
+f4_12 sf
+1.7(2.\312\312Caching)A
+72 175 :M
+f1_12 sf
+.671 .067(In several cases, we "peek" at the same character several times before it finally matches.  This)J
+72 187 :M
+.754 .075(problem can easily be corrected by caching the next character in a lexical variable, so that the)J
+72 199 :M
+-.107(compiler may possibly keep this lexical variable in a register.  The need to cache such a character is)A
+72 211 :M
+-.043(not so acute in the C language, where stream accessing functions )A
+f5_10 sf
+-.053(getc)A
+f1_12 sf
+-.041( and )A
+f5_10 sf
+-.053(ungetc)A
+f1_12 sf
+-.044( are most likely)A
+72 223 :M
+1.519 .152(defined as macros which already manipulate a cached value, but Common Lisp's )J
+f5_10 sf
+.46(peek)A
+f1_12 sf
+1.199 .12( and)J
+72 235 :M
+f5_10 sf
+-.125(read-char)A
+f1_12 sf
+-.098( are quite heavyweight due to the flexibility of streams and the large variety of options.)A
+72 252 :M
+.067 .007(The one potential problem with caching is what value to store in the cache on an end-of-file.  For)J
+72 264 :M
+.123 .012(maximum efficiency, one should be able to treat it as just another character, which doesn't match)J
+72 276 :M
+-.001(any real character or character type.  One does not want to restrict the kinds of characters that can)A
+72 288 :M
+.07 .007(appear in a grammar, however.  One is therefore led to the C solution of utilizing a non-character)J
+72 300 :M
+-.065(as an EOF value.)A
+72 324 :M
+f4_12 sf
+1.516(3.\312\312Inlining)A
+72 341 :M
+f1_12 sf
+.513 .051(Potentially the most expensive single operation in a META parser is the call to )J
+f5_10 sf
+.178(typep)A
+f1_12 sf
+.458 .046( which is)J
+72 353 :M
+-.052(produced by ")A
+f5_10 sf
+-.059(@\()A
+f1_12 sf
+-.057(<type>)A
+f5_10 sf
+-.059<CA>A
+f1_12 sf
+-.052(<variable>)A
+f5_10 sf
+-.059<29>A
+f1_12 sf
+-.051(".  We have used the Common Lisp type system for character)A
+72 365 :M
+1.646 .165(class hacking, because it is very flexible and it was already there.  In most Common Lisp)J
+72 377 :M
+.815 .082(implementations, however, a )J
+f5_10 sf
+.2(typep)A
+f1_12 sf
+.465 .046( call is likely to be quite slow.  If one is lucky, then simply)J
+72 389 :M
+-.046(proclaiming )A
+f5_10 sf
+-.054(typep)A
+f1_12 sf
+-.038( to be )A
+f5_10 sf
+-.054(inline)A
+f1_12 sf
+-.041( should speed parsing up substantially.  If this is still too slow, we)A
+72 401 :M
+.745 .074(have two choices: we can either compile more complex code, or we can fix )J
+f5_10 sf
+.261(typep)A
+f1_12 sf
+.591 .059( to be more)J
+72 413 :M
+-.086(efficient.  We choose the course of making )A
+f5_10 sf
+-.106(typep)A
+f1_12 sf
+-.087( more efficient.)A
+72 431 :M
+.609 .061(We change our compiler to compile into a macro )J
+f5_10 sf
+.21(my-typep)A
+f1_12 sf
+.105(,)A
+f1_9 sf
+0 -3 rm
+.158(15)A
+0 3 rm
+f1_12 sf
+.77 .077( which recognizes the important)J
+72 443 :M
+.236 .024(special cases, such as a )J
+f5_10 sf
+.093(member)A
+f1_12 sf
+.223 .022( list, which we will compile into a )J
+f5_10 sf
+.093(case)A
+f1_12 sf
+.187 .019( macro.  The )J
+f5_10 sf
+.093(case)A
+f1_12 sf
+.342 .034( macro)J
+72 455 :M
+1.315 .131(already has enough restrictions and context to compile into a table-driven dispatch, and if a)J
+72 467 :M
+-.074(particular implementation does not do this, then we can expand )A
+f5_10 sf
+-.091(my-typep)A
+f1_12 sf
+-.071( into the macro )A
+f5_10 sf
+-.091(my-case)A
+f1_12 sf
+(,)S
+72 479 :M
+(which will.)S
+72 503 :M
+f4_12 sf
+1.106(4.\312\312Short-circuiting)A
+72 520 :M
+f1_12 sf
+.188 .019(META uses a plethora of )J
+f5_10 sf
+.067(AND)A
+f1_12 sf
+.125 .012('s and )J
+f5_10 sf
+.067(OR)A
+f1_12 sf
+.209 .021('s, which can be quite inefficient if not compiled properly.)J
+72 533 :M
+-.061(If your compiler compiles these expressions efficiently, then you may skip this section.)A
+f1_9 sf
+0 -3 rm
+-.116(16)A
+0 3 rm
+72 550 :M
+f1_12 sf
+1.17 .117(The proper compiling technique for compiling )J
+f5_10 sf
+.326(AND)A
+f1_12 sf
+.181(/)A
+f5_10 sf
+.326(OR)A
+f1_12 sf
+1.046 .105( expressions has been known since the)J
+72 563 :M
+.903 .09(earliest days of Lisp, but is not )J
+f0_12 sf
+.312(well)A
+f1_12 sf
+1.445 .145(-known, and students continually rediscover it.)J
+f1_9 sf
+0 -3 rm
+.28(17)A
+0 3 rm
+f1_12 sf
+.831 .083(  Short-)J
+72 575 :M
+1.283 .128(circuited boolean expressions can be efficiently compiled in a "single" recursive pass which)J
+72 587 :M
+-.08(produces nearly optimal code\321even in the presence of weak jump instructions which cannot reach)A
+72 599 :M
+-.073(all of memory [Baker76a] [Baker76b].)A
+72 616 :M
+1.17 .117(The trick is to pass two "continuations" \(really jump addresses\) as arguments to the boolean)J
+72 628 :M
+.371 .037(expression compiler which are the "success" and "failure" continuations of the expression being)J
+72 640 :M
+.63 .063(compiled, and to emit the code )J
+f0_12 sf
+.219(backwards)A
+f1_12 sf
+.73 .073( in the style of dynamic programming; the compiler)J
+72 652 :M
+-.059(returns as a result the address of the compiled expression.  Since one already knows the location to)A
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 665.24 -.24 .24 215.24 665 .24 72 665 @a
+72 677 :M
+f1_9 sf
+(15)S
+f1_10 sf
+0 3 rm
+-.002(We could alternatively install a compiler optimizer, in which case )A
+0 -3 rm
+f0_10 sf
+0 3 rm
+(every)S
+0 -3 rm
+f1_10 sf
+0 3 rm
+( call to )S
+0 -3 rm
+f5_10 sf
+0 3 rm
+(typep)S
+0 -3 rm
+f1_10 sf
+0 3 rm
+( would be speeded up.)S
+0 -3 rm
+72 694 :M
+f1_9 sf
+(16)S
+f1_10 sf
+0 3 rm
+.071 .007(Apple Coral Common Lisp for the Macintosh appears to handle short-circuits reasonably well.)J
+0 -3 rm
+72 711 :M
+f1_9 sf
+.025(17)A
+f1_10 sf
+0 3 rm
+.091 .009(The technique has been described for Lisp and ML [Harper86] [Harper88] pattern matchers, as well as for generic)J
+0 -3 rm
+72 725 :M
+-.031(short-circuit evaluation; see references in [Aho86,p.512].)A
+endp
+%%Page: 10 10
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 10 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+492 752 :M
+(10)S
+72 69 :M
+1.376 .138(which one must jump at the time a branch is emitted, as well as the location of the current)J
+72 82 :M
+-.069(instruction, one can easily choose the correct short/long jump sequence.)A
+f1_9 sf
+0 -3 rm
+-.064(18)A
+0 3 rm
+f1_12 sf
+-.069(  Our parser also requires)A
+72 94 :M
+-.052(the efficient compilation of loops, which require a little more work because the jump-to location is)A
+72 106 :M
+-.005(not yet known for backward jumps \(which occur at the end of a loop\).  The simplest solution is to)A
+72 118 :M
+1.542 .154(always emit a backwards unconditional long jump, which we will then patch after the first)J
+72 130 :M
+-.1(instruction of the loop has been emitted.  Since we know at that time the length of the jump, we can)A
+72 142 :M
+.811 .081(patch in a short jump/no-op sequence if short jumps are faster; the no-op's are never executed)J
+72 154 :M
+-.063(because the loop never "falls through".)A
+72 171 :M
+-.091(Even though our technique wastes a little space after loops in the code, the code is otherwise nearly)A
+72 183 :M
+.959 .096(optimal, since the majority of jumps \(and all conditional jumps\) are forward jumps.  Another)J
+72 195 :M
+.431 .043(source of non-optimality comes from early exits from the body of a loop to the end of the loop.)J
+72 207 :M
+-.04(One can conceive of these branches also being optimized to jump to the beginning of the loop, but)A
+72 219 :M
+.03 .003(this situation is rare enough not to cause any significant loss of speed.  In any case, the advantage)J
+72 231 :M
+-.03(of a compiler optimization must be traded against the cost of programming and maintaining it; the)A
+72 243 :M
+-.111(optimizations we suggest are extremely simple and quite often advantageous.)A
+72 260 :M
+-.072(Below is a simple compiler for short-circuited boolean expressions with loops.)A
+72 277 :M
+f5_10 sf
+.006 .001(\(defvar *program* nil "The reversed list of program steps."\))J
+72 299 :M
+.007 .001(\(defun emit \(instruction next &aux \(label \(gentemp\)\)\))J
+72 310 :M
+.006 .001(  \(unless \(eql \(car *program*\) next\) \(push `\(go ,next\) *program*\)\))J
+72 321 :M
+.006 .001(  \(push instruction *program*\) \(push label *program*\))J
+72 332 :M
+(  label\))S
+72 354 :M
+.007 .001(\(defun emit-test \(test succ fail &aux \(label \(gentemp\)\)\))J
+72 365 :M
+.006 .001(  \(push \(cond \(\(eql \(car *program*\) succ\) `\(unless ,test \(go ,fail\)\)\))J
+72 376 :M
+.004 0(              \(\(eql \(car *program*\) fail\) `\(when ,test \(go ,succ\)\)\))J
+72 387 :M
+.003 0(              \(t `\(if ,test \(go ,succ\) \(go ,fail\)\)\))J
+72 398 :M
+(        *program*\))S
+72 409 :M
+(  \(push label *program*\))S
+72 420 :M
+(  label\))S
+72 442 :M
+(\(defun compile-seq \(x s f\))S
+72 454 :M
+.051 .005(  \(if \(null x\) s \(compile \(car x\) \(compile-seq \(cdr x\) s f)J
+f1_9 sf
+0 -3 rm
+(19)S
+0 3 rm
+f5_10 sf
+.067 .007(\) f\)\)\))J
+72 476 :M
+(\(defun compile-alt \(x s f\))S
+72 487 :M
+.005 0(  \(if \(null x\) f \(compile \(car x\) s \(compile-alt \(cdr x\) s f\)\)\)\))J
+72 509 :M
+(\(defun compile \(x succ fail\))S
+72 520 :M
+(  \(typecase x)S
+72 531 :M
+.005 .001(   \(sequence \(compile-seq x\) succ fail\))J
+72 542 :M
+.005 .001(   \(alternative \(compile-alt x\) succ fail\))J
+72 553 :M
+.005 .001(   \(loop \(let* \(\(go-back \(append '\(go nil\) nil\)\))J
+72 564 :M
+.003 0(                \(loop \(compile \(loop-body x\) \(emit go-back succ\) succ\)\)\))J
+72 575 :M
+.003 0(           \(setf \(cadr go-back\) loop\)\)\))J
+72 586 :M
+.006 .001(   \(execute \(emit-test \(execute-body x\) succ fail\)\))J
+72 597 :M
+.005 .001(   \(t \(emit-test `\(match ,x\) succ fail\)\)\)\))J
+72 620 :M
+f4_12 sf
+4.378 .438(5.\312\312Results and a Challenge to Scheme)J
+72 637 :M
+f1_12 sf
+-.033(Through the use of these techniques, we are able to achieve nearly the same machine code that we)A
+72 649 :M
+.243 .024(would have generated ourselves if we were asked to program the parser in assembly language in)J
+72 661 :M
+-.039(the first place.  We have programmed and optimized a simple integer parser similar to the our first)A
+72 673 :M
+-.116(example grammar which operates on simple strings\321much like the standard built-in Common Lisp)A
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 682.24 -.24 .24 215.24 682 .24 72 682 @a
+72 694 :M
+f1_9 sf
+-.026(18)A
+f1_10 sf
+0 3 rm
+-.024(The backwards emission technique can also easily handle the "pipelined" jumps found in RISC architectures.)A
+0 -3 rm
+72 711 :M
+f1_9 sf
+.254(19)A
+f1_10 sf
+0 3 rm
+.831 .083(This parameter should be an error label once the sequence has committed and can no longer back up; see the)J
+0 -3 rm
+72 725 :M
+-.03(literature on post-Prolog "committed choice" languages [Maher87] [Shapiro89].)A
+endp
+%%Page: 11 11
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 11 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+492 752 :M
+(11)S
+72 69 :M
+.707 .071(function )J
+f5_10 sf
+.187(parse-integer)A
+f1_12 sf
+.581 .058(.  We ran this function repeatedly on a 80,000-character simple string)J
+72 81 :M
+-.031(which consisted of 10,000 copies of the sequence ")A
+f5_10 sf
+-.038(+123456\312)A
+f1_12 sf
+-.035(".  Our META )A
+f5_10 sf
+-.038(parse-integer )A
+f1_12 sf
+-.045(took)A
+72 93 :M
+4.292 .429(about 25.4)J
+cF
+f2_12 sf
+.429(m)A
+sf
+4.292 .429(sec/char., the built-in )J
+f5_10 sf
+6.959 .696(parse-integer )J
+f1_12 sf
+4.955 .496(took about 222)J
+cF
+f2_12 sf
+.496(m)A
+sf
+4.955 .496(sec/char., and)J
+72 106 :M
+f5_10 sf
+-.073(read-from-string)A
+f1_12 sf
+-.06( took about 700)A
+cF
+f2_12 sf
+-.06(m)A
+sf
+-.06(sec/char.)A
+f1_9 sf
+0 -3 rm
+-.055(20)A
+0 3 rm
+f1_12 sf
+-.065(  \(Timings were performed on an Apple Macintosh)A
+72 118 :M
+-.035(Plus with a Radius 68020 accelerator card, 4Mbytes of memory, and Coral Common Lisp v1.2 set)A
+72 130 :M
+.129 .013(to the highest optimization levels.\)  Our optimized META )J
+f5_10 sf
+.04(parse-integer)A
+f1_12 sf
+.098 .01( did not call any other)J
+72 142 :M
+.399 .04(functions, not even subprimitives.  It therefore appears that no further speed can be gained until)J
+72 154 :M
+.126 .013(Coral utilizes the full 68020 instruction set and does a better job of compiling fixnum arithmetic;)J
+72 166 :M
+-.004(e.g., it refuses to keep unboxed fixnums in registers very long.)A
+72 183 :M
+.401 .04(The META parsing technique is an interesting challenge to Scheme compiler writers, because a)J
+72 195 :M
+.566 .057(Scheme compiler must itself perform all of the optimizations we have discussed.  Of particular)J
+72 207 :M
+-.001(interest is the ability of a Scheme compiler to transform the nest of mutually recursive tail-calling)A
+72 219 :M
+1.583 .158(functions which are Scheme's equivalent of assembly language "goto" labels into assembly)J
+72 231 :M
+-.046(language "goto" labels.  This transformation should be possible, because none of these "functions")A
+72 243 :M
+-.045(have arguments.)A
+72 266 :M
+f3_12 sf
+.714(E.\312\312CONCLUSIONS)A
+72 288 :M
+f1_12 sf
+1.028 .103(We have shown a simple technique called META for building very fast parsers/translators in)J
+72 300 :M
+1.004 .1(Common Lisp, which is more general than some other techniques\321e.g., the )J
+f0_12 sf
+.397(CGOL)A
+f1_12 sf
+1.192 .119( [Pratt76])J
+72 312 :M
+-.023(operator precedence system used in Macsyma.  This technique already produces readable code, as)A
+72 324 :M
+.179 .018(we have shown by a number of examples, but some might wish for even more readable code.  In)J
+72 336 :M
+1.368 .137(such a case, one can easily utilize the META technique to produce a "reader macro" which)J
+72 348 :M
+.35 .035(translates the )J
+f0_12 sf
+.094(exact)A
+f1_12 sf
+.362 .036( [Steele90]-style syntax equations into an efficient parser.  Our stomach, still)J
+72 361 :M
+.125 .012(queasy from too much syntax, has so far vetoed these efforts.)J
+f1_9 sf
+0 -3 rm
+.031(21)A
+0 3 rm
+f1_12 sf
+.108 .011(  Should a grammar require it, the)J
+72 373 :M
+.991 .099(META technique can also be easily extended to handle minimum/maximum numbers of loop)J
+72 385 :M
+-.085(iterations in the sequence "$" construct.)A
+72 402 :M
+-.08(There are several advantages to embedding a special-purpose parsing language into Common Lisp.)A
+72 414 :M
+-.008(First, it provides a higher level of abstraction, which allows one to concentrate on recognizing the)A
+72 426 :M
+.363 .036(correct syntax.  Second, this abstraction is more compact, allowing the programmer to focus his)J
+72 439 :M
+.109 .011(attention on a smaller body of code.)J
+f1_9 sf
+0 -3 rm
+.027(22)A
+0 3 rm
+f1_12 sf
+.102 .01(  Third, this higher level of abstraction allows for a number)J
+72 451 :M
+.609 .061(of different implementations, of which we have exhibited three.  Finally, we can get the parser)J
+72 463 :M
+.036 .004(running relatively quickly, and if later additional speed is required, we can change the underlying)J
+72 475 :M
+-.129(implementation without changing the code for the grammar.)A
+72 492 :M
+.986 .099(We have found one problem in the use of the META system presented here\321the inadvertent)J
+72 504 :M
+1.117 .112(returning of )J
+f5_10 sf
+.369(NIL)A
+f1_12 sf
+.991 .099( by an escape expression "!", which causes a failure out of a sequence and a)J
+72 516 :M
+-.019(possible nasty bug.  We considered the possibility of including )A
+f0_12 sf
+-.023(two)A
+f1_12 sf
+-.021( execution escape characters\321)A
+72 528 :M
+.316 .032(one for )J
+f0_12 sf
+.118(predicates)A
+f1_12 sf
+.279 .028(, and one for )J
+f0_12 sf
+.12(statements)A
+f1_12 sf
+.219 .022( like )J
+f5_10 sf
+.142(setq)A
+f1_12 sf
+.403 .04(.  This change would avoid the necessity of)J
+72 540 :M
+1.445 .145(wrapping )J
+f5_10 sf
+.341(\(progn\312...\312t\))A
+f1_12 sf
+1.04 .104( around statements.  We have not done this, however, because our)J
+72 552 :M
+-.051(shyness about using up macro characters has exceeded our fear of bugs.)A
+72 569 :M
+1.08 .108(We are uncomfortable about the large volume of side-effects present in META-style parsers.)J
+72 581 :M
+-.05(Given the nature of a parsing task, however, which is emulating a state machine \(with or without a)A
+72 593 :M
+-.067(push-down stack\), it is unlikely that a parser without side effects could be very efficient without an)A
+72 605 :M
+.411 .041(extremely clever \(i.e., very expensive\) compiler.  The META technique does not seem to easily)J
+72 617 :M
+.895 .089(extend to parsing tasks which must be able to "rub out"\321e.g., directly parsing user type-in\321)J
+72 629 :M
+-.071(because that task seems to require the ability for arbitrary back-up, including backing up over side-)A
+-4096 -4095 -1 1 -4094 -4095 1 -4096 -4096 @a
+72 654.24 -.24 .24 215.24 654 .24 72 654 @a
+72 666 :M
+f1_9 sf
+.054(20)A
+f1_10 sf
+0 3 rm
+.198 .02(Coral Common Lisp v1.2 )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.071(read-from-string)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.17 .017( appears to erroneously ignore its )J
+0 -3 rm
+f5_10 sf
+0 3 rm
+.071(:start)A
+0 -3 rm
+f1_10 sf
+0 3 rm
+.268 .027( argument.)J
+0 -3 rm
+72 683 :M
+f1_9 sf
+.366(21)A
+f1_10 sf
+0 3 rm
+1.441 .144(The original META paper [Schorre64] gives such a compiler for "BNF"-style syntax equations, which we)J
+0 -3 rm
+72 697 :M
+-.028(previously implemented \(1966\) in IBM 360 machine code.)A
+72 711 :M
+f1_9 sf
+.065(22)A
+f1_10 sf
+0 3 rm
+.255 .025(The code complexity of the resulting code is extremely high when measured by software engineering complexity)J
+0 -3 rm
+72 725 :M
+-.011(metrics; "productivity", as measured by these metrics, thus goes off-scale.)A
+endp
+%%Page: 12 12
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 12 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+492 752 :M
+(12)S
+72 69 :M
+(effects.  The )S
+f0_12 sf
+(LINGOL)S
+f1_12 sf
+( parsing system [Pratt73], based on "mostly functional" techniques, handles)S
+72 81 :M
+-.101(the "rub out" problem quite elegantly.)A
+72 98 :M
+.738 .074(Because META parsers address the backing-up issue directly as they are programmed, META)J
+72 110 :M
+.426 .043(needs no complex run-time system like ATN's [Woods70] or Prolog.  We conjecture, therefore,)J
+72 122 :M
+.589 .059(that Prolog would need an extremely clever compiler to deduce the same degree of backing-up)J
+72 134 :M
+-.153(optimization that the programmer manually performs in META.)A
+72 151 :M
+-.072(While we have argued for the use of an embedded special purpose parsing language, we have )A
+f0_12 sf
+-.167(NOT)A
+72 163 :M
+f1_12 sf
+.602 .06(advocated adding this language to the Common Lisp standard, which is weighted down far too)J
+72 175 :M
+-.089(much as it is.  A language like META that can be programmed in less than 1 page of code is hardly)A
+72 187 :M
+.166 .017(worth standardizing.  Standardization would also inhibit the possibilities of )J
+f0_12 sf
+.164 .016(ad hoc)J
+f1_12 sf
+.241 .024( optimizations)J
+72 199 :M
+.658 .066(for a particular purpose, in which case the programmer would not use META at all.  For these)J
+72 211 :M
+-.087(reasons, we have presented META as a technique, rather than as a rigidly-defined language.)A
+72 228 :M
+-.091(We have with great trepidation reviewed this technique for making parsing tasks easier to program,)A
+72 240 :M
+.349 .035(because we feel that parsing complex syntax is an inherently low-value activity.  Unfortunately,)J
+72 252 :M
+-.015(any tool that makes these tasks easier is likely to get used, but not necessarily for the good; e.g., it)A
+72 264 :M
+-.031(is said that all C programmers ever do is )A
+f5_10 sf
+-.04(yacc)A
+f1_12 sf
+(, )S
+f5_10 sf
+-.04(yacc)A
+f1_12 sf
+(, )S
+f5_10 sf
+-.04(yacc)A
+f1_12 sf
+(!)S
+72 287 :M
+f3_12 sf
+.421(F.\312\312ACKNOWLEDGEMENTS)A
+72 309 :M
+f1_12 sf
+-.099(We appreciate the suggestions of Andr\216 van Meulebrouck for improving this paper.)A
+72 332 :M
+f3_12 sf
+.512(G.\312\312REFERENCES)A
+72 354 :M
+f1_10 sf
+.515 .052(Aho, A.V., Sethi, R., and Ullman, J.D.  )J
+f0_10 sf
+.847 .085(Compilers: Principles, Techniques and Tools)J
+f1_10 sf
+.8 .08(.  Addison-Wesley, Reading,)J
+89 365 :M
+.773 .077(MA, 1986.)J
+72 376 :M
+1.97 .197(Baker, Henry.  "COMFY\321A Comfortable Set of Control Primitives for Machine Language Programming".)J
+89 387 :M
+.097 .01(Unpublished manuscript, 1976.)J
+72 398 :M
+2.177 .218(Baker, Henry.  "COMFY-65\321A Medium-Level Machine Language for 6502 Programming".  Unpublished)J
+89 409 :M
+.412 .041(manuscript, 1976.)J
+72 420 :M
+.248 .025(Baker, Henry.  "Equal Rights for Functional Objects".  ACM )J
+f0_10 sf
+.35 .035(OOPS Messenger 4)J
+f1_10 sf
+.327 .033(,4 \(Oct.\3121993\), 2-27.)J
+72 431 :M
+1.545 .155(Clinger, William D.  "How to Read Floating Point Numbers Accurately".  )J
+f0_10 sf
+1.825 .183(ACM PLDI'90, Sigplan Not. 25)J
+f1_10 sf
+.742(,6)A
+89 442 :M
+.927 .093(\(June\3121990\), 92-101.)J
+72 453 :M
+.383 .038(Curtis, Pavel.  "\(algorithms\)" column on Scheme macros.  Lisp Pointers 1,6 \(April-June\3121988\),LPI-6.19-LPI-6.30.)J
+72 464 :M
+.122 .012(des Rivi\217res, Jim, and Kiczales, Gregor.  )J
+f0_10 sf
+.125 .012(The Art of the Metaobject Protocol, Part I.)J
+f1_10 sf
+.157 .016(  Unpublished manuscript, Xerox)J
+89 475 :M
+1.978 .198(PARC, Oct.\3121990.)J
+72 486 :M
+.628 .063(Harper, R., MacQueen, D., and Milner, R.  "Standard ML".  ECS-LFCS-86-2, Comp. Sci. Dept., U. of Edinburgh,)J
+89 497 :M
+.172(March\3121986,70p.)A
+72 508 :M
+.614 .061(Harper, R., Milner, R., Tofte, Mads.  "The Definition of Standard ML, Version 2".  ECS-LFCS-88-62, Comp. Sci.)J
+89 519 :M
+.725 .072(Dept., U. of Edinburgh, Aug.\3121988,97p.)J
+72 530 :M
+.251 .025(Haynes, Christopher T.  "Logic Continuations".  )J
+f0_10 sf
+.221 .022(J. Logic Progr. 4)J
+f1_10 sf
+.408 .041( \(1987\),157-176.)J
+72 541 :M
+.971 .097(Johnson, S.C. and Lesk, M.E.  "UNIX Time-Sharing System: Language Development Tools".  )J
+f0_10 sf
+.804 .08(Bell Sys. Tech. J.)J
+89 552 :M
+.139(57)A
+f1_10 sf
+.904 .09(,6 \(July-Aug.\3121978\),2155-2175.)J
+72 563 :M
+.125 .013(Kernighan, B. W., and Ritchie, D.  )J
+f0_10 sf
+.208 .021(The C Programming Language)J
+f1_10 sf
+.161 .016(.  Prentice-Hall, Englewood Cliffs, NJ, 1978.)J
+72 574 :M
+.808 .081(Maher, M.J.  "Logic semantics for a class of committed-choice programs".  )J
+f0_10 sf
+.765 .076(Proc. 4th Int'l Conf. of Logic Progr)J
+f1_10 sf
+.258(.,)A
+89 585 :M
+.406 .041(MIT Press, 1987,858-876.)J
+72 596 :M
+.559 .056(McCarthy, John.  "History of LISP".  )J
+f0_10 sf
+.694 .069(ACM Sigplan Not. 13)J
+f1_10 sf
+1.199 .12(,8 \(Aug.\3121978\),217-223.)J
+72 607 :M
+.295 .03(Pratt, V.R.  "A Linguistics Oriented Programming Language".  )J
+f0_10 sf
+.296 .03(Proc. IJCAI 3)J
+f1_10 sf
+.524 .052( \(Aug.\3121973\),372-381.)J
+72 618 :M
+.235 .024(Pratt, V.R.  "CGOL\321an Alternative External Representation for LISP users".  AI Working Paper 121, MIT AI Lab.,)J
+89 629 :M
+.172(March\3121976,13p.)A
+72 640 :M
+.576 .058(Rulifson, J.F., Derksen, J.A., and Waldinger, R.J.  "QA4: A Procedural Calculus for Intuitive Reasoning".  SRI AI)J
+89 651 :M
+.486 .049(Ctr. Tech. Note 73, Nov. 1972,363p.)J
+72 662 :M
+.818 .082(Schorre, D.V.  "META II: A Syntax-Oriented Compiler Writing Language".  )J
+f0_10 sf
+.723 .072(Proc. 19'th Nat'l. Conf. of the ACM)J
+89 673 :M
+f1_10 sf
+.104(\(Aug.\3121964\),D1.3-1-D1.3-11.)A
+72 684 :M
+.073 .007(Schneider, F., Johnson, G.D.  "META-3: A Syntax-Directed Compiler Writing Compiler to Generate Efficient Code".)J
+89 695 :M
+f0_10 sf
+.359 .036(Proc. 19'th Nat'l. Conf. of the ACM)J
+f1_10 sf
+.725 .073( \(1964\),D1.5-1-D1.5-8.)J
+72 706 :M
+3.061 .306(Shapiro, E.  "The Family of Concurrent Logic Programming Languages".  )J
+f0_10 sf
+3.447 .345(ACM Comput. Surv. 21)J
+f1_10 sf
+1.381(,3)A
+89 717 :M
+.162(\(Sept.\3121989\),412-510.)A
+72 728 :M
+.239 .024(Woods, W.A.  "Transition Network Grammars for Natural Language Analysis".  )J
+f0_10 sf
+.323 .032(CACM 13)J
+f1_10 sf
+.41 .041(,10 \(Oct.\3121970\),591-606.)J
+endp
+%%Page: 13 13
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 13 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+492 752 :M
+(13)S
+72 75 :M
+f3_12 sf
+(APPENDIX \321 COMMON LISP LAMBDA PARAMETER LISTS)S
+72 97 :M
+f5_10 sf
+(\(defun parse-lambda-exp)S
+72 108 :M
+(       \(x &optional \(env nil\) &aux)S
+72 119 :M
+.004 0(        body rqds opts rst kwds? kwds okys? auxs fenv senv lenv)J
+72 130 :M
+.003 0(        v i sv k type form d pdecls specials\))J
+72 141 :M
+.005 .001(  ;;; Parse a lambda-expression x and return 11 values:)J
+72 152 :M
+.004 0(  ;;; 1-3. body, reqd vars, opts \(v i sv\))J
+72 163 :M
+.004 0(  ;;; 4-5. rest variable \(or nil\), keys? \(can be t even when #6 is nil\))J
+72 174 :M
+.004 0(  ;;; 6-8  kwds \(\(k v\) i sv\), other keys?, auxs \(v i\))J
+72 185 :M
+.005 .001(  ;;; 9-11. lcl fn env, special env \(except local specials\), lcl var env.)J
+72 196 :M
+.005 .001(  ;;; This lambda parser is presented for illustration only, and may not)J
+72 207 :M
+.006 .001(  ;;; correctly implement ANSI Common Lisp syntax or semantics.)J
+72 218 :M
+(  \(matchit x)S
+72 229 :M
+(   \(LAMBDA)S
+262 229 :M
+.005 .001(; we use upper case here only for readability.)J
+72 240 :M
+.005 0(     \($[@\(vname v\) !\(push v rqds\) !\(push \(make-vbind v\) lenv\)])J
+72 251 :M
+(      {[&OPTIONAL)S
+72 262 :M
+.004 0(        $[{@\(vname v\) \(@\(vname v\) {[@\(t i\) {@\(vname sv\) []}] []}\)})J
+72 273 :M
+.004 0(          !\(progn \(push `\(,v ,i ,sv\) opts\) \(push \(make-vbind v\) lenv\))J
+72 284 :M
+.003 0(                  \(when sv \(push \(make-vbind sv '\(member nil t\)\) lenv\)\))J
+72 295 :M
+.002 0(                  \(setq i nil sv nil\) t\)]] []})J
+72 306 :M
+.005 0(      {[&REST @\(vname rst\) !\(push \(make-vbind rst 'list\) lenv\)] []})J
+72 317 :M
+(      {[&KEY !\(setq kwds? t\))S
+72 328 :M
+(        $[{@\(vname v\))S
+72 339 :M
+.003 0(           \({@\(vname v\) \(@\(symbol k\) @\(vname v\)\)})J
+72 350 :M
+.003 0(            {[@\(t i\) {@\(vname sv\) []}] []}\)})J
+72 361 :M
+.004 0(          !\(progn \(unless k \(setq k \(intern \(symbol-name v\) 'keyword\)\)\))J
+72 372 :M
+.003 0(                  \(push `\(\(,k ,v\) ,i ,sv\) kwds\) \(push \(make-vbind v\) lenv\))J
+72 383 :M
+.003 0(                  \(when sv \(push \(make-vbind sv '\(member nil t\)\) lenv\)\))J
+72 394 :M
+.002 0(                  \(setq k nil i nil sv nil\) t\)])J
+72 405 :M
+.004 0(        {[&ALLOW-OTHER-KEYS !\(setq okys? t\)] []}] []})J
+72 416 :M
+.004 0(      {[&AUX $[{@\(vname v\) \(@\(vname v\) {@\(t i\) []}\)})J
+72 427 :M
+.003 0(               !\(progn \(push `\(,v ,i\) auxs\) \(push \(make-vbind v\) lenv\))J
+72 438 :M
+.002 0(                       \(setq i nil\) t\)]] []}\))J
+72 449 :M
+(     ;;; Now process declarations.)S
+72 460 :M
+(     $[\(DECLARE)S
+72 471 :M
+.004 0(        ${\(SPECIAL $[@\(vname v\) !\(push v specials\)]\))J
+72 482 :M
+.004 0(          \({[TYPE @\(t type\)] @\(typename type\)})J
+72 493 :M
+.004 0(           $[@\(vname v\) !\(setf \(dtype \(lookup v lenv\)\))J
+72 504 :M
+.002 0(                               `\(and ,type ,\(dtype \(lookup v lenv\)\)\)\)]\))J
+72 515 :M
+.004 0(          \(IGNORE $[@\(vname v\) !\(progn \(setf \(dtype \(lookup v lenv\)\) nil\) t\)]\))J
+72 526 :M
+(          [@\(t d\) !\(progn)S
+72 537 :M
+.002 0(                    \(when \(eq \(car d\) 'function\))J
+72 548 :M
+.003 0(                     \(setq d `\(ftype \(function ,@\(cddr d\)\) ,\(cadr d\)\)\)\))J
+72 559 :M
+.002 0(                    \(push d pdecls\))J
+72 570 :M
+(                    t\)]}\)])S
+72 581 :M
+.004 0(     $[@\(t form\) !\(push form body\)]\)\) ; Error if body ends in non-list.)J
+72 592 :M
+.006 .001(  ;;; Fix up local environment to correctly handle special variables.)J
+72 603 :M
+(  \(dolist \(binding lenv\))S
+72 614 :M
+.005 0(    \(let* \(\(v \(vbind-name binding\)\)\))J
+72 625 :M
+.005 0(      \(when \(or \(declared-special-p v env\) \(member v specials\)\))J
+72 636 :M
+.004 0(        \(setf \(vbind-special-p binding\) t\)\)\)\))J
+72 647 :M
+(  ;;; Create special environment)S
+72 658 :M
+(  \(let* \(\(nenv \(append lenv env\)\)\))S
+72 669 :M
+(    \(dolist \(v specials\))S
+72 680 :M
+.005 0(      \(unless \(declared-special-p v nenv\))J
+72 691 :M
+.004 0(        \(setq senv \(lx-bind-special v senv\)\)\)\)\))J
+72 702 :M
+.006 .001(  \(values \(reverse body\) \(reverse rqds\) \(reverse opts\) rst)J
+72 713 :M
+.004 0(          kwds? \(reverse kwds\) okys? \(reverse auxs\) fenv senv lenv\)\))J
+endp
+%%Page: 14 14
+%%BeginPageSetup
+initializepage
+(Henry Baker; page: 14 of 14)setjob
+%%EndPageSetup
+-31 -31 :T
+gS 31 31 552 730 rC
+72 45 :M
+f0_12 sf
+.504 .05(ACM LISP Pointers IV)J
+f1_12 sf
+.825 .082(,2 \(April-June\3121991\),3-15.)J
+72 752 :M
+-.093(\251 1991 Nimble Computer Corporation)A
+492 752 :M
+(14)S
+72 69 :M
+.662 .066(We have shown one scheme for parsing Common Lisp lambda parameter lists \("lambda-lists"\))J
+72 81 :M
+1.302 .13(which easily generalizes to handle the full complexity of lambda-lists.  It has one source of)J
+72 93 :M
+-.046(inefficiency which is not easily eliminated, however.  Whenever a variable name is to be matched,)A
+72 105 :M
+.125 .013(we first check that the tentative variable name is a symbol, and we then check to see that it is )J
+f0_12 sf
+.064(not)A
+72 117 :M
+f1_12 sf
+.623 .062(one of the lambda-list keywords \()J
+f5_10 sf
+.192(&optional)A
+f1_12 sf
+.16 .016(, )J
+f5_10 sf
+.192(&rest)A
+f1_12 sf
+.534 .053(, &cetera\).  While this check can be open-)J
+72 129 :M
+-.012(coded quite efficiently, we find that if a lambda-list keyword does occur, then it will be compared)A
+72 141 :M
+-.059(against the list twice\321once to determine that it is not a legal variable name, and once to determine)A
+72 153 :M
+-.091(which of the lambda-list keywords it is.  This inefficiency is due to the definition of variable names)A
+72 165 :M
+.303 .03(as the )J
+f0_12 sf
+.155(complement)A
+f1_12 sf
+.426 .043( of the set of lambda-list keywords )J
+f0_12 sf
+.122(relative)A
+f1_12 sf
+.376 .038( to the set of symbols.  While this)J
+72 177 :M
+-.087(inefficiency could conceivably be eliminated by the use of escape forms like block/return-from, we)A
+72 189 :M
+.376 .038(feel that any additional speedup will be overwhelmed by the additional costs of regularizing the)J
+72 201 :M
+-.08(lambda-list for a less-sophisticated consumer.)A
+endp
+%%Trailer
+end
+%%EOF

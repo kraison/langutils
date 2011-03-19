@@ -1,0 +1,16 @@
+(in-package :cl-user)
+
+(mk:defsystem :meta
+    :source-pathname "cl-library:meta;"
+    :source-extension "lisp"
+    :components ((:module meta
+                  :source-pathname ""
+                  :components ((:file "package")
+			       (:file "meta" :depends-on ("package"))))
+		 )
+    :finally-do (progn
+                  (provide :meta)
+                  (pushnew :meta *features*)
+		  (pushnew :cl-meta *features*)
+		  ))
+
